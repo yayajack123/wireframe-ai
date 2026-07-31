@@ -64,7 +64,7 @@ This document is intended as the reference for producing **lo-fi wireframes** fo
 
 | Section | UI Components |
 |---|---|
-| Hero Banner | High-res HQ image/short video background, headline ("Pioneering Financial Excellence"), sub-headline, scroll indicator |
+| Hero Banner | Pure dark atmospheric background (`#0a0a0a`), 3-slide automatic banner slider (5-second auto-play interval with filling progress bar indicators), manual prev/next navigation controls, scaled responsive dimensions (0.75 ratio from 1920px Figma canvas), 3 dummy banner slides (Holding Group, Business Units, Governance & Sustainability) |
 | Vision, Mission & Core Values | 2-column layout: left = Vision/Mission text; right = 4-card grid of Core Values (Integrity, Innovation, Client-Centric, Excellence) with icons |
 | Interactive Corporate Structure | Interactive organizational chart (clickable zoom/expand) from top leadership down to subsidiary divisions |
 | Awards | 3–4 column card grid: trophy/badge image, award name, issuing body (OJK, Bloomberg, IDX), year received |
@@ -239,11 +239,23 @@ This document is intended as the reference for producing **lo-fi wireframes** fo
 
 ## 7. Global / Cross-Page Components (assumed — confirm before wireframing)
 
-- Global header/navigation (mega-menu across 8 top-level modules)
-- Global footer (sitemap links, regulatory badges, social links, disclaimer)
+- Global header/navigation (official Samuel Group SVG logo from assets/logo.svg; Home link; About Us dropdown: Company Profile, History & Milestones, Legal Documents; Investors dropdown: Investment Highlights, Market & Disclosure, Reports, Investor Relations Contact; Corporate Governance link; Newsroom link; Career link; Contact Us black rounded pill CTA button)
+- Global footer (5-column structural layout + OJK compliance bottom bar):
+  - **Company Name**: PT Samuel Tumbuh Bersama (Samuel Group Holding).
+  - **Real Logo**: Official Samuel Group SVG logo (`assets/logo.svg` rendered with white/inverted branding).
+  - **Col 1: Corporate Brand & Location**: Real Samuel Group logo (`assets/logo.svg`), PT Samuel Tumbuh Bersama, HQ Address (Menara Imperium 21st Floor, Jl. H.R. Rasuna Said Kav. X-6 No. 8, Jakarta 12920), and Social Media Links (LinkedIn, Instagram, YouTube, X/Twitter, WhatsApp).
+  - **Col 2: Contact Us**: Sub-labeled support channels (General Support: `+62 21 2854 8100`, WhatsApp Support: `+62 812 8228 8800`, Customer Care Email: `care@samuel.co.id`, Investor Relations Email: `ir@samuel.co.id`).
+  - **Col 3: Navigation**: Single-link core pages (Home, Business Units, Sustainability, Careers).
+  - **Col 4: About Us**: Sub-menu links (Company Profile, History & Milestones, Legal Documents).
+  - **Col 5: Investors**: Sub-menu links (Investment Highlights, Market & Disclosure, Reports, IR Contact).
+  - **Bottom Bar**: Copyright statement ("Copyright © 2026 PT Samuel Tumbuh Bersama"), and Legal Links (Terms & Conditions, Privacy Policy, Disclosure Statement).
+- **Navbar & Footer Componentization Architecture**: Global Navbar and Footer are modularized into reusable JavaScript component scripts (`components/navbar.js` and `components/footer.js`) so updating a single component file updates all wireframe and high-fidelity pages automatically.
 - Language switcher (ID/EN), given bilingual references in source material
 - Cookie/privacy consent banner (financial services compliance)
 - Search (global site search, separate from in-page document search bars)
+- **Primary Site Entry Point & Display Focus**: The site defaults directly to the wireframe view (`wireframes/base/home-wireframe.html`) as the primary main page.
+- **Hidden Floating Widgets**: The floating view switcher ("Hi-Fi Design / Wireframe") and "Design by Timedoor Indonesia" badge are hidden across all pages.
+- **Independent High-Fidelity Access**: High-fidelity pages are stored independently in `/high-fidelity/` and accessible via direct separate URLs.
 
 ---
 

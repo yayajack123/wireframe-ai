@@ -151,6 +151,7 @@ body {
 }
 
 @media (hover: hover) and (pointer: fine) {
+
   .btn-contact:active,
   .about-cta-link:active,
   .business-cta-link:active,
@@ -353,6 +354,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .btn-contact:active,
   .about-cta-link:active,
   .business-cta-link:active,
@@ -367,12 +369,15 @@ body {
     transition: opacity 200ms ease-out !important;
     transition-delay: 0s !important;
   }
+
   .esg-item {
     transition: none !important;
   }
+
   .esg-item:hover {
     transform: none !important;
   }
+
   .mobile-drawer {
     transform: none !important;
     transition: opacity 200ms ease-out !important;
@@ -447,6 +452,7 @@ body {
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(-50%, 0, 0);
   }

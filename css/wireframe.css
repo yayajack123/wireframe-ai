@@ -85,6 +85,29 @@ body.wireframe-mode {
   background-color: #222222 !important;
 }
 
+.wireframe-btn-pill-blue {
+  background-color: #163cb7 !important;
+  color: #ffffff !important;
+  border: 1px solid #163cb7 !important;
+  padding: 8px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--wireframe-font-heading);
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wireframe-btn-pill-blue:hover {
+  background-color: #123099 !important;
+  border-color: #123099 !important;
+}
+
 .wireframe-btn-hero-pill {
   border: 1px solid rgba(255, 255, 255, 0.18);
   background-color: transparent;
@@ -210,7 +233,7 @@ body.wireframe-mode {
   display: inline-block;
   white-space: nowrap;
   animation: ticker-scroll 35s linear infinite;
-  font-family: var(--wireframe-font-heading);
+  font-family: 'Switzer', var(--wireframe-font-heading), sans-serif !important;
   font-size: 42px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
@@ -238,3 +261,18 @@ body.wireframe-mode {
   background-color: #d9d9d9;
   margin: 0 auto;
 }
+
+/* Hero Banner Auto-Slider Progress Animation */
+@keyframes heroProgressFill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.hero-progress-active {
+  animation: heroProgressFill 5s linear forwards;
+}
+
