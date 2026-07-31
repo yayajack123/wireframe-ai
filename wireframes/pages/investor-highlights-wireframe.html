@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Legal Documents Wireframe — Samuel Group</title>
+  <title>Investment Highlights Wireframe — Samuel Group</title>
 
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
@@ -22,37 +22,37 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="wireframe.css" />
+  <link rel="stylesheet" href="../../css/wireframe.css" />
 </head>
 <body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
 
   <!-- Header -->
   <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
     <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
-      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+      <a href="../base/home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
 
       <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
-        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        <a href="../base/home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
         
         <div class="relative group py-1">
-          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
             <span>About Us</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </button>
           <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
             <a href="company-profile-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Company Profile</a>
             <a href="history-milestones-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">History &amp; Milestones</a>
-            <a href="legal-documents-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">Legal Documents</a>
+            <a href="legal-documents-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Legal Documents</a>
           </div>
         </div>
 
         <div class="relative group py-1">
-          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">
             <span>Investors</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </button>
           <div class="dropdown-menu absolute top-full left-0 w-56 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
-            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investment Highlights</a>
+            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">Investment Highlights</a>
             <a href="market-disclosure-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Market &amp; Disclosure</a>
             <a href="reports-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Reports Archive</a>
             <a href="ir-contact-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investor Relations Contact</a>
@@ -81,94 +81,104 @@
     </nav>
   </header>
 
+  <!-- Stock Ticker Top Bar -->
+  <div class="w-full bg-[#f6f6f6] border-b border-black/12 py-2.5 px-6 font-mono text-xs">
+    <div class="max-w-[1350px] mx-auto flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <span class="font-bold font-switzer text-[#0a0a0a]">IDX: IFSTAR</span>
+        <span>IDR 1,850.00</span>
+        <span class="text-green-700 font-semibold">+45.00 (+2.49%) ↑</span>
+        <span class="text-neutral-500">Vol: 12.4M</span>
+      </div>
+      <span class="text-neutral-400 text-[11px]">Real-time IDX feed · Last Updated 14:00:17</span>
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <section class="w-full bg-[#0a0a0a] text-white py-16 lg:py-24 px-6 lg:px-12 border-b border-white/10">
     <div class="max-w-[1350px] mx-auto flex flex-col items-start gap-4">
-      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">About Us · Legal Repository</span>
-      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Legal Documents &amp; Regulatory Licenses</h1>
+      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">Investors Hub · Overview</span>
+      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Investment Highlights</h1>
       <p class="font-jakarta text-[15px] text-white/85 max-w-[600px]">
-        Official licenses, regulatory decrees, and statutory filings under OJK and BEI supervision.
+        A pitch deck to evaluate Samuel Group's financial performance, growth trajectory, and competitive moats.
       </p>
     </div>
   </section>
 
-  <!-- Legal Repository Section -->
+  <!-- Key Metrics & Trend Chart Section -->
   <section class="w-full py-20 px-6 lg:px-12 bg-white">
-    <div class="max-w-[1350px] mx-auto flex flex-col gap-8">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-12">
       
-      <!-- Filter & Search Bar -->
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-4 bg-[#f6f6f6] border border-black/12 rounded-lg">
-        <div class="w-full md:w-80">
-          <input type="text" placeholder="Search document name or decree number..." class="w-full px-4 py-2 bg-white border border-black/12 rounded-md text-xs font-jakarta outline-none focus:border-black" />
+      <!-- Metric Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="wireframe-card p-6 flex flex-col gap-2">
+          <span class="wireframe-eyebrow">Revenue (FY2025)</span>
+          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">IDR 1.42 T</h3>
+          <span class="font-mono text-xs text-green-700 font-semibold">+14.2% YoY ↑</span>
         </div>
-        <div class="flex items-center gap-3 w-full md:w-auto overflow-x-auto font-switzer text-xs">
-          <button class="px-3 py-1.5 bg-[#0a0a0a] text-white rounded-full font-medium">All Licenses</button>
-          <button class="px-3 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full">OJK Licenses</button>
-          <button class="px-3 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full">Ministry Decrees</button>
-          <button class="px-3 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full">IDX Membership</button>
+
+        <div class="wireframe-card p-6 flex flex-col gap-2">
+          <span class="wireframe-eyebrow">Net Income</span>
+          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">IDR 385 B</h3>
+          <span class="font-mono text-xs text-green-700 font-semibold">+18.5% YoY ↑</span>
+        </div>
+
+        <div class="wireframe-card p-6 flex flex-col gap-2">
+          <span class="wireframe-eyebrow">EBITDA Margin</span>
+          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">42.8%</h3>
+          <span class="font-mono text-xs text-green-700 font-semibold">+2.1% YoY ↑</span>
+        </div>
+
+        <div class="wireframe-card p-6 flex flex-col gap-2">
+          <span class="wireframe-eyebrow">Assets Under Management</span>
+          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">IDR 18.6 T</h3>
+          <span class="font-mono text-xs text-green-700 font-semibold">+12.0% YoY ↑</span>
+        </div>
+
+      </div>
+
+      <!-- Growth Trend Chart Placeholder -->
+      <div class="wireframe-card p-8 flex flex-col gap-6">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">5-Year Financial Performance Trend</h3>
+            <p class="font-jakarta text-xs text-[#5e5e5e]">Consolidated Revenue vs. Net Operating Income (2021 - 2025)</p>
+          </div>
+          <div class="flex items-center gap-2 font-switzer text-xs">
+            <span class="px-3 py-1 bg-[#0a0a0a] text-white rounded">Revenue</span>
+            <span class="px-3 py-1 bg-[#ececec] text-[#0a0a0a] rounded">Net Profit</span>
+          </div>
+        </div>
+
+        <div class="wireframe-placeholder-light w-full h-[320px] flex items-center justify-center">
+          <span class="text-xs font-mono text-[#9a9a9a]">[ INTERACTIVE 5-YEAR FINANCIAL TREND LINE/BAR CHART WIDGET ]</span>
         </div>
       </div>
 
-      <!-- Legal Table Repository -->
-      <div class="w-full overflow-x-auto border border-black/12 rounded-lg">
-        <table class="w-full text-left border-collapse font-jakarta text-xs">
-          <thead>
-            <tr class="bg-[#f6f6f6] border-b border-black/12 font-switzer text-[#0a0a0a] uppercase tracking-wider text-[11px]">
-              <th class="py-3.5 px-4 font-semibold">Document / License Name</th>
-              <th class="py-3.5 px-4 font-semibold">License / Decree No.</th>
-              <th class="py-3.5 px-4 font-semibold">Issuing Authority</th>
-              <th class="py-3.5 px-4 font-semibold">Issue Date</th>
-              <th class="py-3.5 px-4 font-semibold text-right">Action</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-black/12 text-[#5e5e5e]">
-            <tr class="hover:bg-neutral-50">
-              <td class="py-4 px-4 font-medium text-[#0a0a0a]">Underwriter License (Penjamin Emisi Efek)</td>
-              <td class="py-4 px-4 font-mono">KEP-83/PM/1999</td>
-              <td class="py-4 px-4">OJK (Otoritas Jasa Keuangan)</td>
-              <td class="py-4 px-4">Dec 14, 1999</td>
-              <td class="py-4 px-4 text-right">
-                <a href="#" class="px-3 py-1.5 bg-[#0a0a0a] text-white rounded text-[11px] font-switzer font-medium hover:bg-neutral-800 transition">Download PDF</a>
-              </td>
-            </tr>
-            <tr class="hover:bg-neutral-50">
-              <td class="py-4 px-4 font-medium text-[#0a0a0a]">Broker-Dealer License (Perantara Pedagang Efek)</td>
-              <td class="py-4 px-4 font-mono">KEP-84/PM/1999</td>
-              <td class="py-4 px-4">OJK (Otoritas Jasa Keuangan)</td>
-              <td class="py-4 px-4">Dec 14, 1999</td>
-              <td class="py-4 px-4 text-right">
-                <a href="#" class="px-3 py-1.5 bg-[#0a0a0a] text-white rounded text-[11px] font-switzer font-medium hover:bg-neutral-800 transition">Download PDF</a>
-              </td>
-            </tr>
-            <tr class="hover:bg-neutral-50">
-              <td class="py-4 px-4 font-medium text-[#0a0a0a]">Investment Manager License (Manajer Investasi)</td>
-              <td class="py-4 px-4 font-mono">KEP-09/BL/MI/2008</td>
-              <td class="py-4 px-4">Bapepam-LK / OJK</td>
-              <td class="py-4 px-4">May 22, 2008</td>
-              <td class="py-4 px-4 text-right">
-                <a href="#" class="px-3 py-1.5 bg-[#0a0a0a] text-white rounded text-[11px] font-switzer font-medium hover:bg-neutral-800 transition">Download PDF</a>
-              </td>
-            </tr>
-            <tr class="hover:bg-neutral-50">
-              <td class="py-4 px-4 font-medium text-[#0a0a0a]">IDX Exchange Membership Certificate</td>
-              <td class="py-4 px-4 font-mono">SPAB-142/BEI/2007</td>
-              <td class="py-4 px-4">PT Bursa Efek Indonesia (IDX)</td>
-              <td class="py-4 px-4">Nov 30, 2007</td>
-              <td class="py-4 px-4 text-right">
-                <a href="#" class="px-3 py-1.5 bg-[#0a0a0a] text-white rounded text-[11px] font-switzer font-medium hover:bg-neutral-800 transition">Download PDF</a>
-              </td>
-            </tr>
-            <tr class="hover:bg-neutral-50">
-              <td class="py-4 px-4 font-medium text-[#0a0a0a]">Company Deed of Establishment &amp; Articles of Association</td>
-              <td class="py-4 px-4 font-mono">AHU-0019284.AH.01.01</td>
-              <td class="py-4 px-4">Ministry of Law &amp; Human Rights</td>
-              <td class="py-4 px-4">Aug 18, 1999</td>
-              <td class="py-4 px-4 text-right">
-                <a href="#" class="px-3 py-1.5 bg-[#0a0a0a] text-white rounded text-[11px] font-switzer font-medium hover:bg-neutral-800 transition">Download PDF</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Competitive Moats Grid -->
+      <div class="flex flex-col gap-6">
+        <h3 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Why Invest in Samuel Group</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="wireframe-card p-6 flex flex-col gap-3">
+            <span class="wireframe-eyebrow">Moat 01</span>
+            <h4 class="font-switzer font-medium text-lg text-[#0a0a0a]">Market Leadership</h4>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">Top-tier rankings in institutional brokerage volume and discretionary fund performance.</p>
+          </div>
+
+          <div class="wireframe-card p-6 flex flex-col gap-3">
+            <span class="wireframe-eyebrow">Moat 02</span>
+            <h4 class="font-switzer font-medium text-lg text-[#0a0a0a]">Robust Risk Governance</h4>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">Strict capital adequacy ratios and zero material regulatory non-compliance events.</p>
+          </div>
+
+          <div class="wireframe-card p-6 flex flex-col gap-3">
+            <span class="wireframe-eyebrow">Moat 03</span>
+            <h4 class="font-switzer font-medium text-lg text-[#0a0a0a]">Consistent Dividend Yield</h4>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">Payout ratio exceeding 45% of net profit maintained consistently over the last 5 fiscal years.</p>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -241,8 +251,8 @@
       Design by Timedoor Indonesia
     </div>
     <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
-      <a href="index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
-    <a href="home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+      <a href="../../high-fidelity/index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="../base/home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
     </div>
   </div>
 </body>

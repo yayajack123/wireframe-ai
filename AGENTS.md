@@ -21,8 +21,8 @@ When adding, modifying, or reviewing web transitions, micro-interactions, or pag
 ### 3. Wireframe Base Layout Standards
 When generating or restructuring any wireframe page:
 * **Required Templates**: You MUST base the structural HTML grid, container bounds, headers, and footers on pre-existing base wireframes:
-  * Use [home-wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/home-wireframe.html) as the template for landing and home page wireframes.
-  * Use [wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframe.html) as the template for standard inner page wireframes.
+  * Use [wireframes/base/home-wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframes/base/home-wireframe.html) as the template for landing and home page wireframes.
+  * Use [wireframes/base/wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframes/base/wireframe.html) as the template for standard inner page wireframes.
 * **Execution Constraint**: Maintain structural class naming, layout tokens, and existing script/css linkage patterns from these base templates.
 
 ### 4. Figma Link UI Generation Protocol

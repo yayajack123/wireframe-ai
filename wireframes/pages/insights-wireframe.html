@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us Wireframe — Samuel Group</title>
+  <title>Podcast & Insights Wireframe — Samuel Group</title>
 
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
@@ -22,17 +22,17 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="wireframe.css" />
+  <link rel="stylesheet" href="../../css/wireframe.css" />
 </head>
 <body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
 
   <!-- Header -->
   <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
     <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
-      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+      <a href="../base/home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
 
       <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
-        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        <a href="../base/home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
         
         <div class="relative group py-1">
           <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
@@ -62,13 +62,13 @@
         <a href="governance-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Governance</a>
 
         <div class="relative group py-1">
-          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">
             <span>Newsroom</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </button>
           <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
             <a href="newsroom-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">News &amp; Press Releases</a>
-            <a href="insights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Podcast &amp; Insights</a>
+            <a href="insights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">Podcast &amp; Insights</a>
           </div>
         </div>
 
@@ -76,7 +76,7 @@
       </div>
 
       <div class="hidden lg:flex items-center shrink-0">
-        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark font-semibold border-b-2 border-white">Contact Us</a>
+        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark">Contact Us</a>
       </div>
     </nav>
   </header>
@@ -84,92 +84,87 @@
   <!-- Hero Section -->
   <section class="w-full bg-[#0a0a0a] text-white py-16 lg:py-24 px-6 lg:px-12 border-b border-white/10">
     <div class="max-w-[1350px] mx-auto flex flex-col items-start gap-4">
-      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">General Contact &amp; Support</span>
-      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Contact Us</h1>
+      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">Educational Media &amp; Research</span>
+      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Podcast &amp; Market Insights</h1>
       <p class="font-jakarta text-[15px] text-white/85 max-w-[600px]">
-        Get in touch with customer support, asset management advisors, or corporate inquiry representatives.
+        In-depth podcast discussions with senior economists, equity analysts, and daily market research notes.
       </p>
     </div>
   </section>
 
-  <!-- Smart Routing Form & Office Locations Map Section -->
+  <!-- Featured Podcast Player Hero Section -->
   <section class="w-full py-20 px-6 lg:px-12 bg-white">
-    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-      
-      <!-- Smart Routing Form -->
-      <div class="lg:col-span-6 flex flex-col gap-6">
-        <div>
-          <span class="wireframe-eyebrow">Smart Routing Inquiry</span>
-          <h2 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">Send a Message</h2>
-          <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Select your message destination to route directly to the responsible team.</p>
+    <div class="max-w-[1350px] mx-auto">
+      <div class="wireframe-card p-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <div class="wireframe-placeholder-dark w-full aspect-video flex flex-col items-center justify-center gap-3">
+            <div class="w-16 h-16 rounded-full bg-white text-[#0a0a0a] flex items-center justify-center font-bold text-xl cursor-pointer">▶</div>
+            <span class="text-xs font-mono text-[#d9d9d9]">[ FEATURED PODCAST VIDEO / AUDIO PLAYER WIDGET ]</span>
+          </div>
         </div>
 
-        <div class="wireframe-card p-8 flex flex-col gap-4">
-          <form class="flex flex-col gap-4 font-jakarta text-xs">
-            <div class="flex flex-col gap-1.5">
-              <label class="font-switzer font-medium text-[#0a0a0a]">Message Destination / Department *</label>
-              <select class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none text-[#0a0a0a] font-jakarta">
-                <option>Client Support / Online Trading Account (Samuel Sekuritas)</option>
-                <option>Asset Management / Mutual Funds (Samuel Aset Manajemen)</option>
-                <option>Media &amp; Public Relations Inquiry</option>
-                <option>General Corporate Inquiry</option>
-              </select>
-            </div>
+        <div class="lg:col-span-5 flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 bg-[#0a0a0a] text-white font-switzer text-[11px] font-bold uppercase tracking-wider">Episode 24</span>
+            <span class="font-jakarta text-xs text-[#9a9a9a]">Duration: 38 mins</span>
+          </div>
+          <h2 class="font-switzer font-semibold text-2xl lg:text-3xl text-[#0a0a0a] leading-tight">
+            Indonesia 2026 Macro Strategy &amp; Commodity Cycle Outlook
+          </h2>
+          <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            Host Teguh Hartanto interviews Chief Economist on interest rate trajectories, IDX market sectors, and palm oil commodity trends.
+          </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="flex flex-col gap-1.5">
-                <label class="font-switzer font-medium text-[#0a0a0a]">Your Full Name *</label>
-                <input type="text" placeholder="Full name" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black" />
-              </div>
-              <div class="flex flex-col gap-1.5">
-                <label class="font-switzer font-medium text-[#0a0a0a]">Email Address *</label>
-                <input type="email" placeholder="name@email.com" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black" />
-              </div>
-            </div>
-
-            <div class="flex flex-col gap-1.5">
-              <label class="font-switzer font-medium text-[#0a0a0a]">Subject *</label>
-              <input type="text" placeholder="Inquiry subject" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black" />
-            </div>
-
-            <div class="flex flex-col gap-1.5">
-              <label class="font-switzer font-medium text-[#0a0a0a]">Message *</label>
-              <textarea rows="5" placeholder="How can we assist you today?" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black"></textarea>
-            </div>
-
-            <button type="button" class="wireframe-btn-pill-dark w-full py-3 mt-2 text-sm">Send Message</button>
-          </form>
+          <div class="p-4 bg-[#f6f6f6] border border-black/12 rounded-md font-jakarta text-xs space-y-1">
+            <span class="font-switzer font-semibold text-[#0a0a0a] block">Timestamps &amp; Topics:</span>
+            <div class="text-[#5e5e5e]">02:15 - Global Central Bank Interest Rates</div>
+            <div class="text-[#5e5e5e]">14:40 - Indonesia Domestic Consumption Growth</div>
+            <div class="text-[#5e5e5e]">28:10 - Top Equity Sector Stock Picks</div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Office Map & Address Cards -->
-      <div class="lg:col-span-6 flex flex-col gap-6">
-        <div>
-          <span class="wireframe-eyebrow">Locations</span>
-          <h2 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">Headquarters &amp; Branches</h2>
-        </div>
+  <!-- Media & Research Tabs Grid -->
+  <section class="w-full py-16 px-6 lg:px-12 bg-[#f6f6f6] border-t border-black/12">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-8">
+      
+      <div class="flex items-center gap-4 font-switzer text-xs">
+        <button class="px-5 py-2 bg-[#0a0a0a] text-white rounded-full font-medium">Podcast Episodes</button>
+        <button class="px-5 py-2 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full">Market Research Reports</button>
+      </div>
 
-        <div class="wireframe-placeholder-light w-full h-[320px] flex items-center justify-center">
-          <span class="text-xs font-mono text-[#9a9a9a]">[ INTERACTIVE GOOGLE MAP WIDGET ]</span>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="wireframe-card p-5 flex flex-col gap-2">
-            <span class="font-switzer font-bold text-xs text-[#0a0a0a]">Jakarta Headquarters</span>
-            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
-              Menara Imperium, 19th Floor, Jl. HR. Rasuna Said Kav. 1 Jakarta 12980
-            </p>
-            <span class="font-mono text-[11px] text-[#0a0a0a] pt-1">+62 21 2854 8100</span>
+      <!-- Podcast Episode Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-light w-full aspect-video flex items-center justify-center relative">
+            <div class="w-10 h-10 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center font-bold text-xs">▶</div>
           </div>
-
-          <div class="wireframe-card p-5 flex flex-col gap-2">
-            <span class="font-switzer font-bold text-xs text-[#0a0a0a]">Surabaya Branch Office</span>
-            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
-              Spazio Building 5th Floor, Jl. Mayjen Yono Suwoyo, Surabaya 60226
-            </p>
-            <span class="font-mono text-[11px] text-[#0a0a0a] pt-1">+62 31 6003 9800</span>
-          </div>
+          <span class="wireframe-eyebrow">Episode 23 · 32 mins</span>
+          <h3 class="font-switzer font-medium text-lg text-[#0a0a0a]">Navigating Volatility in Bond &amp; Fixed Income Markets</h3>
+          <p class="font-jakarta text-xs text-[#5e5e5e]">In-depth discussion on government bond yields and portfolio duration strategy.</p>
         </div>
+
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-light w-full aspect-video flex items-center justify-center relative">
+            <div class="w-10 h-10 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center font-bold text-xs">▶</div>
+          </div>
+          <span class="wireframe-eyebrow">Episode 22 · 45 mins</span>
+          <h3 class="font-switzer font-medium text-lg text-[#0a0a0a]">ESG Investing in Emerging Asian Markets</h3>
+          <p class="font-jakarta text-xs text-[#5e5e5e]">How fund managers integrate carbon emissions and governance metrics into stock selection.</p>
+        </div>
+
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-light w-full aspect-video flex items-center justify-center relative">
+            <div class="w-10 h-10 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center font-bold text-xs">▶</div>
+          </div>
+          <span class="wireframe-eyebrow">Episode 21 · 28 mins</span>
+          <h3 class="font-switzer font-medium text-lg text-[#0a0a0a]">Banking &amp; Digital Financial Ecosystem Outlook</h3>
+          <p class="font-jakarta text-xs text-[#5e5e5e]">Evaluating commercial bank net interest margins and digital payment growth.</p>
+        </div>
+
       </div>
 
     </div>
@@ -242,8 +237,8 @@
       Design by Timedoor Indonesia
     </div>
     <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
-      <a href="index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
-    <a href="home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+      <a href="../../high-fidelity/index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="../base/home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
     </div>
   </div>
 </body>

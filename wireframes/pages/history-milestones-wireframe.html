@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Careers Wireframe — Samuel Group</title>
+  <title>History & Milestones Wireframe — Samuel Group</title>
 
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
@@ -22,26 +22,26 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="wireframe.css" />
+  <link rel="stylesheet" href="../../css/wireframe.css" />
 </head>
 <body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
 
   <!-- Header -->
   <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
     <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
-      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+      <a href="../base/home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
 
       <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
-        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        <a href="../base/home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
         
         <div class="relative group py-1">
-          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">
             <span>About Us</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </button>
           <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
             <a href="company-profile-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Company Profile</a>
-            <a href="history-milestones-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">History &amp; Milestones</a>
+            <a href="history-milestones-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">History &amp; Milestones</a>
             <a href="legal-documents-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Legal Documents</a>
           </div>
         </div>
@@ -72,7 +72,7 @@
           </div>
         </div>
 
-        <a href="careers-wireframe.html" class="px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">Careers</a>
+        <a href="careers-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Careers</a>
       </div>
 
       <div class="hidden lg:flex items-center shrink-0">
@@ -83,107 +83,97 @@
 
   <!-- Hero Section -->
   <section class="w-full bg-[#0a0a0a] text-white py-16 lg:py-24 px-6 lg:px-12 border-b border-white/10">
-    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-      <div class="lg:col-span-7 flex flex-col items-start gap-4">
-        <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">Talent &amp; Culture</span>
-        <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Build Your Career With Us</h1>
-        <p class="font-jakarta text-[15px] text-white/85 max-w-[540px]">
-          Join Indonesia's leading capital markets group. Grow alongside experienced fund managers, investment bankers, and equity researchers.
-        </p>
-        <a href="#jobs" class="wireframe-btn-hero-pill mt-2">
-          <span>Explore Open Positions</span>
-          <div class="wireframe-btn-arrow-badge">↓</div>
-        </a>
-      </div>
-
-      <div class="lg:col-span-5">
-        <div class="wireframe-placeholder-dark w-full aspect-[4/3] flex items-center justify-center p-6">
-          <span class="text-xs font-mono text-[#d9d9d9]">[ LIFE AT SAMUEL GROUP VIDEO / CULTURE PHOTO ]</span>
-        </div>
-      </div>
+    <div class="max-w-[1350px] mx-auto flex flex-col items-start gap-4">
+      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">About Us · Growth History</span>
+      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Our Journey &amp; Growth Milestones</h1>
+      <p class="font-jakarta text-[15px] text-white/85 max-w-[600px]">
+        Over two decades of excellence pioneering brokerage, asset management, and capital markets solutions in Indonesia.
+      </p>
     </div>
   </section>
 
-  <!-- Job Board Section -->
-  <section id="jobs" class="w-full py-20 px-6 lg:px-12 bg-white">
-    <div class="max-w-[1350px] mx-auto flex flex-col gap-10">
+  <!-- Timeline Viewer Section -->
+  <section class="w-full py-20 px-6 lg:px-12 bg-white">
+    <div class="max-w-[1100px] mx-auto flex flex-col gap-12">
       
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-4 bg-[#f6f6f6] border border-black/12 rounded-lg">
-        <div class="w-full md:w-96">
-          <input type="text" placeholder="Search position or key qualification..." class="w-full px-4 py-2.5 bg-white border border-black/12 rounded-md font-jakarta text-xs text-[#0a0a0a] outline-none" />
-        </div>
-        <div class="flex items-center gap-3 font-switzer text-xs">
-          <select class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md text-[#0a0a0a]">
-            <option>All Departments</option>
-            <option>Equity Research</option>
-            <option>Asset Management</option>
-            <option>Investment Banking</option>
-            <option>Technology &amp; IT</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Open Job Postings Accordions -->
-      <div class="flex flex-col gap-4">
+      <div class="relative border-l-2 border-black/15 ml-4 sm:ml-32 pl-6 sm:pl-10 space-y-12">
         
-        <!-- Job 1 -->
-        <div class="wireframe-card p-6 flex flex-col gap-4">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <span class="wireframe-eyebrow">Equity Research · Full-Time</span>
-              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Senior Equity Research Analyst (Banking Sector)</h3>
-              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Location: Jakarta HQ &nbsp;·&nbsp; Experience: 5+ Years</p>
+        <!-- Milestone 1999 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-[#0a0a0a] border-4 border-white"></div>
+          <span class="sm:absolute sm:-left-36 sm:top-1 font-switzer font-bold text-2xl text-[#0a0a0a] block mb-2 sm:mb-0">1999</span>
+          
+          <div class="wireframe-card p-6 flex flex-col lg:flex-row gap-6 items-start">
+            <div class="wireframe-placeholder-light w-full lg:w-48 aspect-[4/3] shrink-0 flex items-center justify-center">
+              <span class="text-xs font-mono text-[#9a9a9a]">[ ARCHIVE PHOTO 1999 ]</span>
             </div>
-            <button class="wireframe-btn-pill-dark text-xs shrink-0">Apply Now</button>
-          </div>
-          <div class="border-t border-black/12 pt-3 font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
-            <span class="font-semibold text-[#0a0a0a] block mb-1">Key Qualifications:</span>
-            Must hold WPEE license. Minimum 5 years analyzing Tier-1 Indonesian commercial banks. CFA designation preferred.
-          </div>
-        </div>
-
-        <!-- Job 2 -->
-        <div class="wireframe-card p-6 flex flex-col gap-4">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <span class="wireframe-eyebrow">Asset Management · Full-Time</span>
-              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Portfolio Manager (Fixed Income)</h3>
-              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Location: Jakarta HQ &nbsp;·&nbsp; Experience: 4+ Years</p>
+            <div class="flex flex-col gap-2">
+              <span class="wireframe-eyebrow">Founding Year</span>
+              <h3 class="font-switzer font-medium text-xl text-[#0a0a0a]">Establishment of Samuel Sekuritas Indonesia</h3>
+              <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+                Founded as an independent securities company providing institutional equity research and equity brokerage services on the Jakarta Stock Exchange (now IDX).
+              </p>
             </div>
-            <button class="wireframe-btn-pill-dark text-xs shrink-0">Apply Now</button>
-          </div>
-          <div class="border-t border-black/12 pt-3 font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
-            <span class="font-semibold text-[#0a0a0a] block mb-1">Key Qualifications:</span>
-            Active WMI (Manajer Investasi) license mandatory. Proven track record managing discretionary bond portfolios.
           </div>
         </div>
 
-        <!-- Job 3 -->
-        <div class="wireframe-card p-6 flex flex-col gap-4">
-          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <span class="wireframe-eyebrow">Technology · Full-Time</span>
-              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Senior Trading Systems Engineer</h3>
-              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Location: Jakarta HQ &nbsp;·&nbsp; Experience: 3+ Years</p>
+        <!-- Milestone 2008 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-[#0a0a0a] border-4 border-white"></div>
+          <span class="sm:absolute sm:-left-36 sm:top-1 font-switzer font-bold text-2xl text-[#0a0a0a] block mb-2 sm:mb-0">2008</span>
+          
+          <div class="wireframe-card p-6 flex flex-col lg:flex-row gap-6 items-start">
+            <div class="wireframe-placeholder-light w-full lg:w-48 aspect-[4/3] shrink-0 flex items-center justify-center">
+              <span class="text-xs font-mono text-[#9a9a9a]">[ ARCHIVE PHOTO 2008 ]</span>
             </div>
-            <button class="wireframe-btn-pill-dark text-xs shrink-0">Apply Now</button>
-          </div>
-          <div class="border-t border-black/12 pt-3 font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
-            <span class="font-semibold text-[#0a0a0a] block mb-1">Key Qualifications:</span>
-            Experience with high-frequency trading APIs, FIX protocol, and real-time financial market data streaming pipelines.
+            <div class="flex flex-col gap-2">
+              <span class="wireframe-eyebrow">Expansion</span>
+              <h3 class="font-switzer font-medium text-xl text-[#0a0a0a]">Launch of Samuel Aset Manajemen</h3>
+              <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+                Expanded operations into fund management through Samuel Aset Manajemen, launching flagship discretionary funds and mutual fund products.
+              </p>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <!-- Internship & Spontaneous Banner -->
-      <div class="p-8 bg-[#f6f6f6] border border-black/12 rounded-lg flex flex-col md:flex-row items-center justify-between gap-6">
-        <div>
-          <span class="wireframe-eyebrow">Internship &amp; Talent Pool</span>
-          <h3 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Proactive Application / Internship Program</h3>
-          <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Don't see an exact match? Upload your CV into our talent pool for future openings.</p>
+        <!-- Milestone 2015 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-[#0a0a0a] border-4 border-white"></div>
+          <span class="sm:absolute sm:-left-36 sm:top-1 font-switzer font-bold text-2xl text-[#0a0a0a] block mb-2 sm:mb-0">2015</span>
+          
+          <div class="wireframe-card p-6 flex flex-col lg:flex-row gap-6 items-start">
+            <div class="wireframe-placeholder-light w-full lg:w-48 aspect-[4/3] shrink-0 flex items-center justify-center">
+              <span class="text-xs font-mono text-[#9a9a9a]">[ ARCHIVE PHOTO 2015 ]</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="wireframe-eyebrow">Digital Transformation</span>
+              <h3 class="font-switzer font-medium text-xl text-[#0a0a0a]">Next-Gen Trading Platform Rollout</h3>
+              <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+                Introduced direct online trading technology and real-time equity research distribution for retail and institutional clients nationwide.
+              </p>
+            </div>
+          </div>
         </div>
-        <button class="relume-btn-secondary text-xs shrink-0">Upload CV to Talent Pool &gt;</button>
+
+        <!-- Milestone 2024 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-[#0a0a0a] border-4 border-white"></div>
+          <span class="sm:absolute sm:-left-36 sm:top-1 font-switzer font-bold text-2xl text-[#0a0a0a] block mb-2 sm:mb-0">2024</span>
+          
+          <div class="wireframe-card p-6 flex flex-col lg:flex-row gap-6 items-start">
+            <div class="wireframe-placeholder-light w-full lg:w-48 aspect-[4/3] shrink-0 flex items-center justify-center">
+              <span class="text-xs font-mono text-[#9a9a9a]">[ ARCHIVE PHOTO 2024 ]</span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="wireframe-eyebrow">ESG Integration</span>
+              <h3 class="font-switzer font-medium text-xl text-[#0a0a0a]">AUM Milestone &amp; ESG Framework Integration</h3>
+              <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+                Surpassed major AUM benchmarks while embedding formal ESG risk assessment principles into all investment portfolio decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -256,8 +246,8 @@
       Design by Timedoor Indonesia
     </div>
     <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
-      <a href="careers.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
-    <a href="home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+      <a href="../../high-fidelity/index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="../base/home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
     </div>
   </div>
 </body>

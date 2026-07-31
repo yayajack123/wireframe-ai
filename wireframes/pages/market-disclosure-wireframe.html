@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Investment Highlights Wireframe — Samuel Group</title>
+  <title>Market & Disclosure Wireframe — Samuel Group</title>
 
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
@@ -22,17 +22,17 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="wireframe.css" />
+  <link rel="stylesheet" href="../../css/wireframe.css" />
 </head>
 <body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
 
   <!-- Header -->
   <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
     <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
-      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+      <a href="../base/home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
 
       <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
-        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        <a href="../base/home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
         
         <div class="relative group py-1">
           <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
@@ -52,8 +52,8 @@
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </button>
           <div class="dropdown-menu absolute top-full left-0 w-56 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
-            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">Investment Highlights</a>
-            <a href="market-disclosure-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Market &amp; Disclosure</a>
+            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investment Highlights</a>
+            <a href="market-disclosure-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">Market &amp; Disclosure</a>
             <a href="reports-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Reports Archive</a>
             <a href="ir-contact-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investor Relations Contact</a>
           </div>
@@ -81,103 +81,129 @@
     </nav>
   </header>
 
-  <!-- Stock Ticker Top Bar -->
-  <div class="w-full bg-[#f6f6f6] border-b border-black/12 py-2.5 px-6 font-mono text-xs">
-    <div class="max-w-[1350px] mx-auto flex flex-wrap items-center justify-between gap-4">
-      <div class="flex items-center gap-4">
-        <span class="font-bold font-switzer text-[#0a0a0a]">IDX: IFSTAR</span>
-        <span>IDR 1,850.00</span>
-        <span class="text-green-700 font-semibold">+45.00 (+2.49%) ↑</span>
-        <span class="text-neutral-500">Vol: 12.4M</span>
-      </div>
-      <span class="text-neutral-400 text-[11px]">Real-time IDX feed · Last Updated 14:00:17</span>
-    </div>
-  </div>
-
   <!-- Hero Section -->
   <section class="w-full bg-[#0a0a0a] text-white py-16 lg:py-24 px-6 lg:px-12 border-b border-white/10">
     <div class="max-w-[1350px] mx-auto flex flex-col items-start gap-4">
-      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">Investors Hub · Overview</span>
-      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Investment Highlights</h1>
+      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">Investors Hub · Compliance Portal</span>
+      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Market &amp; Disclosure</h1>
       <p class="font-jakarta text-[15px] text-white/85 max-w-[600px]">
-        A pitch deck to evaluate Samuel Group's financial performance, growth trajectory, and competitive moats.
+        Capital market transparency portal tracking real-time stock movement, shareholder structure, and official corporate actions.
       </p>
     </div>
   </section>
 
-  <!-- Key Metrics & Trend Chart Section -->
+  <!-- Interactive Stock Chart Section -->
   <section class="w-full py-20 px-6 lg:px-12 bg-white">
     <div class="max-w-[1350px] mx-auto flex flex-col gap-12">
       
-      <!-- Metric Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <div class="wireframe-card p-6 flex flex-col gap-2">
-          <span class="wireframe-eyebrow">Revenue (FY2025)</span>
-          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">IDR 1.42 T</h3>
-          <span class="font-mono text-xs text-green-700 font-semibold">+14.2% YoY ↑</span>
-        </div>
-
-        <div class="wireframe-card p-6 flex flex-col gap-2">
-          <span class="wireframe-eyebrow">Net Income</span>
-          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">IDR 385 B</h3>
-          <span class="font-mono text-xs text-green-700 font-semibold">+18.5% YoY ↑</span>
-        </div>
-
-        <div class="wireframe-card p-6 flex flex-col gap-2">
-          <span class="wireframe-eyebrow">EBITDA Margin</span>
-          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">42.8%</h3>
-          <span class="font-mono text-xs text-green-700 font-semibold">+2.1% YoY ↑</span>
-        </div>
-
-        <div class="wireframe-card p-6 flex flex-col gap-2">
-          <span class="wireframe-eyebrow">Assets Under Management</span>
-          <h3 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">IDR 18.6 T</h3>
-          <span class="font-mono text-xs text-green-700 font-semibold">+12.0% YoY ↑</span>
-        </div>
-
-      </div>
-
-      <!-- Growth Trend Chart Placeholder -->
+      <!-- Stock Chart Card -->
       <div class="wireframe-card p-8 flex flex-col gap-6">
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">5-Year Financial Performance Trend</h3>
-            <p class="font-jakarta text-xs text-[#5e5e5e]">Consolidated Revenue vs. Net Operating Income (2021 - 2025)</p>
+            <h3 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">IDX: IFSTAR Live Trading Chart</h3>
+            <span class="font-mono text-xs text-green-700 font-semibold">IDR 1,850.00 (+2.49%)</span>
           </div>
           <div class="flex items-center gap-2 font-switzer text-xs">
-            <span class="px-3 py-1 bg-[#0a0a0a] text-white rounded">Revenue</span>
-            <span class="px-3 py-1 bg-[#ececec] text-[#0a0a0a] rounded">Net Profit</span>
+            <button class="px-3 py-1 bg-[#0a0a0a] text-white rounded">1D</button>
+            <button class="px-3 py-1 bg-[#ececec] text-[#0a0a0a] hover:bg-neutral-200 rounded">1M</button>
+            <button class="px-3 py-1 bg-[#ececec] text-[#0a0a0a] hover:bg-neutral-200 rounded">1Y</button>
+            <button class="px-3 py-1 bg-[#ececec] text-[#0a0a0a] hover:bg-neutral-200 rounded">ALL</button>
           </div>
         </div>
 
-        <div class="wireframe-placeholder-light w-full h-[320px] flex items-center justify-center">
-          <span class="text-xs font-mono text-[#9a9a9a]">[ INTERACTIVE 5-YEAR FINANCIAL TREND LINE/BAR CHART WIDGET ]</span>
+        <div class="wireframe-placeholder-light w-full h-[360px] flex items-center justify-center">
+          <span class="text-xs font-mono text-[#9a9a9a]">[ INTERACTIVE IDX CANDLESTICK / LINE CHART WIDGET ]</span>
+        </div>
+
+        <!-- Daily Stats Bar -->
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 pt-4 border-t border-black/12 font-mono text-xs text-[#5e5e5e]">
+          <div><span class="block text-neutral-400 font-sans text-[11px]">Open</span>1,810.00</div>
+          <div><span class="block text-neutral-400 font-sans text-[11px]">High</span>1,865.00</div>
+          <div><span class="block text-neutral-400 font-sans text-[11px]">Low</span>1,805.00</div>
+          <div><span class="block text-neutral-400 font-sans text-[11px]">Market Cap</span>IDR 12.8 T</div>
+          <div><span class="block text-neutral-400 font-sans text-[11px]">P/E Ratio</span>14.2x</div>
         </div>
       </div>
 
-      <!-- Competitive Moats Grid -->
-      <div class="flex flex-col gap-6">
-        <h3 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Why Invest in Samuel Group</h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="wireframe-card p-6 flex flex-col gap-3">
-            <span class="wireframe-eyebrow">Moat 01</span>
-            <h4 class="font-switzer font-medium text-lg text-[#0a0a0a]">Market Leadership</h4>
-            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">Top-tier rankings in institutional brokerage volume and discretionary fund performance.</p>
+      <!-- Shareholder Structure Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 wireframe-card p-6 flex flex-col gap-4">
+          <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Shareholder Structure</h3>
+          <div class="wireframe-placeholder-light w-full aspect-square flex items-center justify-center">
+            <span class="text-xs font-mono text-[#9a9a9a]">[ SHAREHOLDER BREAKDOWN PIE CHART ]</span>
           </div>
+        </div>
 
-          <div class="wireframe-card p-6 flex flex-col gap-3">
-            <span class="wireframe-eyebrow">Moat 02</span>
-            <h4 class="font-switzer font-medium text-lg text-[#0a0a0a]">Robust Risk Governance</h4>
-            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">Strict capital adequacy ratios and zero material regulatory non-compliance events.</p>
+        <div class="lg:col-span-7">
+          <div class="border border-black/12 rounded-lg overflow-x-auto">
+            <table class="w-full text-left font-jakarta text-xs">
+              <thead class="bg-[#f6f6f6] border-b border-black/12 font-switzer text-[11px] uppercase tracking-wider text-[#0a0a0a]">
+                <tr>
+                  <th class="py-3 px-4">Shareholder Name</th>
+                  <th class="py-3 px-4">Category</th>
+                  <th class="py-3 px-4 text-right">Shares Held</th>
+                  <th class="py-3 px-4 text-right">Ownership %</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-black/12 text-[#5e5e5e]">
+                <tr>
+                  <td class="py-3.5 px-4 font-medium text-[#0a0a0a]">PT Samuel Tumbuh Utama</td>
+                  <td class="py-3.5 px-4">Founders / Parent</td>
+                  <td class="py-3.5 px-4 text-right font-mono">3,850,000,000</td>
+                  <td class="py-3.5 px-4 text-right font-mono font-semibold text-[#0a0a0a]">55.4%</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-4 font-medium text-[#0a0a0a]">Global Capital Partners Ltd</td>
+                  <td class="py-3.5 px-4">Institutional Investor</td>
+                  <td class="py-3.5 px-4 text-right font-mono">1,120,000,000</td>
+                  <td class="py-3.5 px-4 text-right font-mono font-semibold text-[#0a0a0a]">16.1%</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-4 font-medium text-[#0a0a0a]">Public Shareholders (&lt;5%)</td>
+                  <td class="py-3.5 px-4">Public Float</td>
+                  <td class="py-3.5 px-4 text-right font-mono">1,980,000,000</td>
+                  <td class="py-3.5 px-4 text-right font-mono font-semibold text-[#0a0a0a]">28.5%</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </div>
+      </div>
 
-          <div class="wireframe-card p-6 flex flex-col gap-3">
-            <span class="wireframe-eyebrow">Moat 03</span>
-            <h4 class="font-switzer font-medium text-lg text-[#0a0a0a]">Consistent Dividend Yield</h4>
-            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">Payout ratio exceeding 45% of net profit maintained consistently over the last 5 fiscal years.</p>
-          </div>
+      <!-- Corporate Actions Archive -->
+      <div class="flex flex-col gap-4">
+        <h3 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Corporate Actions Archive</h3>
+        <div class="border border-black/12 rounded-lg overflow-x-auto">
+          <table class="w-full text-left font-jakarta text-xs">
+            <thead class="bg-[#f6f6f6] border-b border-black/12 font-switzer text-[11px] uppercase tracking-wider text-[#0a0a0a]">
+              <tr>
+                <th class="py-3 px-4">Date</th>
+                <th class="py-3 px-4">Action Type</th>
+                <th class="py-3 px-4">Details / Description</th>
+                <th class="py-3 px-4 text-right">Document Link</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-black/12 text-[#5e5e5e]">
+              <tr>
+                <td class="py-3.5 px-4 font-mono">Jun 18, 2026</td>
+                <td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-black text-white text-[10px] uppercase font-bold">Dividend</span></td>
+                <td class="py-3.5 px-4">Final Dividend Cash Distribution of IDR 45.00 per share for FY2025.</td>
+                <td class="py-3.5 px-4 text-right"><a href="#" class="underline hover:text-black">Download PDF</a></td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-mono">May 05, 2026</td>
+                <td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-neutral-200 text-[#0a0a0a] text-[10px] uppercase font-bold">GMS / RUPS</span></td>
+                <td class="py-3.5 px-4">Annual General Meeting of Shareholders (AGMS) Summary Minutes.</td>
+                <td class="py-3.5 px-4 text-right"><a href="#" class="underline hover:text-black">Download PDF</a></td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-mono">Mar 12, 2026</td>
+                <td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-neutral-200 text-[#0a0a0a] text-[10px] uppercase font-bold">Disclosure</span></td>
+                <td class="py-3.5 px-4">Material Information Disclosure regarding Subsidiary Business Expansion.</td>
+                <td class="py-3.5 px-4 text-right"><a href="#" class="underline hover:text-black">Download PDF</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -251,8 +277,8 @@
       Design by Timedoor Indonesia
     </div>
     <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
-      <a href="index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
-    <a href="home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+      <a href="../../high-fidelity/index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="../base/home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
     </div>
   </div>
 </body>

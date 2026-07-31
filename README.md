@@ -32,13 +32,36 @@ All design implementations and wireframes adhere to strict design systems, respo
 ├── README.md                          # Project documentation and guidelines
 ├── AGENTS.md                          # Mandatory operational rules for AI agents
 ├── SCALING.md                         # Figma to HTML responsive scaling specification (1920px → 1440px)
-├── spec/
-│   └── prd.md                         # Product Requirements Document (PRD)
-├── home-wireframe.html                # Base layout template for home & landing pages
-├── wireframe.html                     # Standard base layout template for inner pages
-├── wireframe.css                      # Base wireframe stylesheet
-├── style.css                          # Primary styling and design system tokens
-└── [page]-wireframe.html             # Individual page wireframe implementations
+├── index.html                         # Root landing redirect page
+├── css/                               # Stylesheet assets
+│   ├── style.css                      # Primary styling for high-fidelity pages
+│   └── wireframe.css                  # Styling tokens for lo-fi wireframe pages
+├── high-fidelity/                     # High-fidelity page implementations
+│   ├── index.html                     # Hi-Fi Home Page
+│   ├── newsroom.html                  # Hi-Fi Newsroom Page
+│   └── careers.html                   # Hi-Fi Careers Page
+├── wireframes/                        # Wireframe implementations
+│   ├── base/                          # Base layout wireframe templates
+│   │   ├── home-wireframe.html        # Base layout template for landing/home page
+│   │   └── wireframe.html             # Base layout template for inner pages
+│   └── pages/                         # Inner page wireframes
+│       ├── business-units-wireframe.html
+│       ├── careers-wireframe.html
+│       ├── company-profile-wireframe.html
+│       ├── contact-wireframe.html
+│       ├── governance-wireframe.html
+│       ├── history-milestones-wireframe.html
+│       ├── insights-wireframe.html
+│       ├── investor-highlights-wireframe.html
+│       ├── ir-contact-wireframe.html
+│       ├── legal-documents-wireframe.html
+│       ├── market-disclosure-wireframe.html
+│       ├── newsroom-wireframe.html
+│       ├── reports-wireframe.html
+│       └── sustainability-wireframe.html
+├── assets/                            # Static vector assets (logo.svg, etc.)
+└── spec/
+    └── prd.md                         # Product Requirements Document (PRD)
 ```
 
 ---
@@ -62,10 +85,10 @@ When adding, refining, or auditing motion and interaction animations across the 
 ### 3. Generating New Wireframes
 When requesting the creation of a new wireframe page:
 * **Mandatory Base Layout**: Always inherit the structural layout, header/footer components, and CSS imports from either:
-  * [home-wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/home-wireframe.html) (for landing/home layout structures)
-  * [wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframe.html) (for standard inner page structures)
+  * [wireframes/base/home-wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframes/base/home-wireframe.html) (for landing/home layout structures)
+  * [wireframes/base/wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframes/base/wireframe.html) (for standard inner page structures)
 * **Prompt Example**:
-  > *"Generate a new wireframe for the market disclosure page using base layout from [wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframe.html)."*
+  > *"Generate a new wireframe for the market disclosure page using base layout from [wireframes/base/wireframe.html](file:///Users/user/Documents/workshop/wireframe-samuel/wireframes/base/wireframe.html)."*
 
 ### 4. Generating UI from Figma Links
 When generating HTML/CSS code directly from a Figma link:
@@ -88,6 +111,6 @@ All page sections, components, and content blocks must directly reflect the spec
 
 ## 🚀 Getting Started
 
-1. **Preview Wireframes**: Open any `.html` wireframe file directly in a web browser or serve locally using a local development server.
+1. **Preview Wireframes**: Open any `.html` file inside `high-fidelity/` or `wireframes/pages/` directly in a web browser or serve locally using a local development server.
 2. **Review Specifications**: Check [spec/prd.md](file:///Users/user/Documents/workshop/wireframe-samuel/spec/prd.md) for content requirements and [SCALING.md](file:///Users/user/Documents/workshop/wireframe-samuel/SCALING.md) for layout metrics.
 3. **Agent Integration**: Refer to [AGENTS.md](file:///Users/user/Documents/workshop/wireframe-samuel/AGENTS.md) for full AI agent behavior protocols.
