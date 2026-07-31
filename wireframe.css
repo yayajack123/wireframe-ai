@@ -1,0 +1,240 @@
+/* Samuel Group Figma Node 11492:1696 Wireframe Theme */
+@import url('https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --wireframe-bg-light: #ffffff;
+  --wireframe-bg-neutral: #f6f6f6;
+  --wireframe-bg-dark: #0a0a0a;
+  --wireframe-card-bg: #ffffff;
+  --wireframe-border: rgba(0, 0, 0, 0.12);
+  --wireframe-border-dark: rgba(255, 255, 255, 0.18);
+  --wireframe-placeholder-dark-bg: #2a2a2a;
+  --wireframe-placeholder-light-bg: #ececec;
+  --wireframe-text-primary: #0a0a0a;
+  --wireframe-text-muted: #5e5e5e;
+  --wireframe-text-dim: #9a9a9a;
+  --wireframe-font-heading: 'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
+  --wireframe-font-body: 'Plus Jakarta Sans', 'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body.wireframe-mode {
+  background-color: var(--wireframe-bg-light);
+  color: var(--wireframe-text-primary);
+  font-family: var(--wireframe-font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-switzer {
+  font-family: var(--wireframe-font-heading);
+}
+
+.font-jakarta {
+  font-family: var(--wireframe-font-body);
+}
+
+/* Brand Logo Box in Header */
+.wireframe-logo-box {
+  border: 1px solid #0a0a0a;
+  border-radius: 4px;
+  padding: 6px 11px;
+  font-family: var(--wireframe-font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.17px;
+  color: #0a0a0a;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Header & Navigation */
+.navbar-relume {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.navbar-relume nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Buttons */
+.relume-btn-primary,
+.wireframe-btn-pill-dark {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+  border: 1px solid #0a0a0a !important;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--wireframe-font-heading);
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.relume-btn-primary:hover,
+.wireframe-btn-pill-dark:hover {
+  background-color: #222222 !important;
+}
+
+.wireframe-btn-hero-pill {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 99px;
+  padding: 9px 9px 9px 19px;
+  font-family: var(--wireframe-font-heading);
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.wireframe-btn-hero-pill:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.wireframe-btn-arrow-badge {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  shrink: 0;
+}
+
+.relume-btn-secondary {
+  background-color: transparent !important;
+  color: #0a0a0a !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--wireframe-font-heading);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.relume-btn-secondary:hover {
+  background-color: #f4f4f4 !important;
+}
+
+/* Image & Visual Wireframe Placeholders */
+.wireframe-placeholder-dark {
+  background-color: #2a2a2a;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wireframe-placeholder-light {
+  background-color: #ececec;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.relume-placeholder {
+  background-color: #ececec;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Styling */
+.relume-card,
+.wireframe-card {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.relume-card-subtle {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Eyebrow / Tagline */
+.relume-eyebrow,
+.wireframe-eyebrow {
+  font-family: var(--wireframe-font-heading);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.44px;
+  color: #5e5e5e;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Ticker Marquee Footer Banner */
+.footer-ticker {
+  background-color: #0a0a0a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 28px 0;
+}
+
+.footer-ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-scroll 35s linear infinite;
+  font-family: var(--wireframe-font-heading);
+  font-size: 42px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: -0.5px;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Organization Tree Connector Lines */
+.org-tree-line-v {
+  width: 1px;
+  background-color: #d9d9d9;
+  margin: 0 auto;
+}
+
+.org-tree-line-h {
+  height: 1px;
+  background-color: #d9d9d9;
+  margin: 0 auto;
+}

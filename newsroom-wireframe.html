@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsroom Wireframe — Samuel Group</title>
+
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Switzer', 'sans-serif'],
+            switzer: ['Switzer', 'sans-serif'],
+            jakarta: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="wireframe.css" />
+</head>
+<body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
+
+  <!-- Header -->
+  <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
+    <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
+      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+
+      <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
+        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>About Us</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="company-profile-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Company Profile</a>
+            <a href="history-milestones-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">History &amp; Milestones</a>
+            <a href="legal-documents-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Legal Documents</a>
+          </div>
+        </div>
+
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Investors</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-56 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investment Highlights</a>
+            <a href="market-disclosure-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Market &amp; Disclosure</a>
+            <a href="reports-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Reports Archive</a>
+            <a href="ir-contact-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investor Relations Contact</a>
+          </div>
+        </div>
+
+        <a href="governance-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Corporate Governance</a>
+
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">
+            <span>Newsroom</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="newsroom-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">News &amp; Press Releases</a>
+            <a href="insights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Podcast &amp; Insights</a>
+          </div>
+        </div>
+
+        <a href="careers-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Careers</a>
+      </div>
+
+      <div class="hidden lg:flex items-center shrink-0">
+        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Secondary Category Filter Bar & Search -->
+  <div class="w-full bg-white border-b border-black/12 py-3 px-6 lg:px-12 sticky top-[85px] z-40">
+    <div class="max-w-[1350px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 overflow-x-auto font-switzer text-xs py-1">
+        <button class="px-4 py-1.5 bg-[#0a0a0a] text-white rounded-full font-medium shrink-0">All News</button>
+        <button class="px-4 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full shrink-0">Corporate News</button>
+        <button class="px-4 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full shrink-0">Press Releases</button>
+        <button class="px-4 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full shrink-0">Media Coverage</button>
+        <button class="px-4 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full shrink-0">Podcast &amp; Insight</button>
+        <button class="px-4 py-1.5 bg-white border border-black/12 text-[#5e5e5e] hover:text-[#0a0a0a] rounded-full shrink-0">Event</button>
+      </div>
+
+      <div class="relative w-full md:w-60">
+        <input type="text" placeholder="Search News..." class="w-full pl-8 pr-3 py-1.5 bg-neutral-100 border border-black/12 rounded-full text-xs text-[#0a0a0a] placeholder-[#9a9a9a] focus:outline-none" />
+        <svg class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#9a9a9a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="w-full py-3 px-6 lg:px-12 bg-neutral-50 border-b border-black/12 text-xs font-jakarta text-[#5e5e5e]">
+    <div class="max-w-[1350px] mx-auto flex items-center gap-2">
+      <a href="home-wireframe.html" class="hover:underline">Home</a>
+      <span>/</span>
+      <span class="font-semibold text-[#0a0a0a]">Samuel Sekuritas Newsroom</span>
+    </div>
+  </div>
+
+  <!-- Hero Featured "Blog & Newsroom" + Portfolio Sidebar -->
+  <section class="w-full py-12 lg:py-16 px-4 sm:px-6 lg:px-[45px] bg-white">
+    <div class="max-w-[1440px] mx-auto space-y-[24px]">
+
+      <!-- Section Top Header: Title & Subtitle + Portfolio Title -->
+      <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-4 pb-2">
+        <div class="space-y-2">
+          <p class="font-switzer font-medium text-[13.5px] text-[#0a0a0a]">Samuel Sekuritas Newsroom</p>
+          <h1 class="font-switzer font-semibold text-3xl lg:text-[42px] text-[#0a0a0a] leading-tight">Blog &amp; Newsroom</h1>
+        </div>
+        <div class="w-full lg:w-[424px]">
+          <h2 class="font-switzer font-semibold text-xl lg:text-[24px] text-[#0a0a0a]">Portofolio Companies</h2>
+        </div>
+      </div>
+
+      <!-- Layout Grid: 3 Columns (2 Small Articles | 1 Main Featured Article | Portfolio Companies Sidebar) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-[27px] items-start">
+        
+        <!-- Column 1: 2 Small Stacked Minimalist Articles (lg:col-span-3) -->
+        <div class="lg:col-span-3 flex flex-col justify-between space-y-8">
+          
+          <!-- Small Article 1 -->
+          <article class="space-y-4 group cursor-pointer">
+            <div class="wireframe-placeholder-light w-full h-[214px] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ NEWS PHOTO 1 ]</span>
+            </div>
+            <div class="space-y-[12px] pt-1">
+              <div class="flex items-center justify-between text-[13.5px]">
+                <div class="bg-[#0a0a0a] text-white px-3 py-1 rounded-[4px]">
+                  <span class="font-switzer font-medium text-[10.5px] tracking-[0.56px] uppercase">Corporates News</span>
+                </div>
+                <span class="font-switzer font-normal text-[#0a0a0a]">18 Juli 2026</span>
+              </div>
+              <h3 class="font-switzer font-medium text-[18px] text-[#0a0a0a] group-hover:underline leading-[1.4]">
+                BEI Cabut Izin Anggota Bursa HSBC Sekuritas Indonesia
+              </h3>
+            </div>
+          </article>
+
+          <!-- Small Article 2 -->
+          <article class="space-y-4 group cursor-pointer">
+            <div class="wireframe-placeholder-light w-full h-[214px] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ NEWS PHOTO 2 ]</span>
+            </div>
+            <div class="space-y-[12px] pt-1">
+              <div class="flex items-center justify-between text-[13.5px]">
+                <div class="bg-[#0a0a0a] text-white px-3 py-1 rounded-[4px]">
+                  <span class="font-switzer font-medium text-[10.5px] tracking-[0.56px] uppercase">Media Coverages</span>
+                </div>
+                <span class="font-switzer font-normal text-[#0a0a0a]">18 Juli 2026</span>
+              </div>
+              <h3 class="font-switzer font-medium text-[18px] text-[#0a0a0a] group-hover:underline leading-[1.4]">
+                COO Danantara Temui Bos Sekuritas: Bank-Bank Kini di Posisi Terbaik
+              </h3>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Column 2: Large Main Featured Minimalist Article (lg:col-span-5) -->
+        <article class="lg:col-span-5 flex flex-col justify-between space-y-6 group cursor-pointer">
+          <div class="wireframe-placeholder-light w-full aspect-[428/214] rounded-[10px] flex items-center justify-center">
+            <span class="text-xs font-mono text-[#9a9a9a]">[ MAIN FEATURED PHOTO ]</span>
+          </div>
+          <div class="space-y-[18px]">
+            <div class="flex items-center justify-between text-[13.5px]">
+              <div class="bg-[#0a0a0a] text-white px-3 py-1 rounded-[4px]">
+                <span class="font-switzer font-medium text-[10.5px] tracking-[0.56px] uppercase">Corporate News</span>
+              </div>
+              <span class="font-switzer font-normal text-[#0a0a0a]">18 Juli 2026</span>
+            </div>
+            <div class="space-y-3">
+              <h2 class="font-switzer font-semibold text-2xl lg:text-[30px] text-[#0a0a0a] group-hover:underline leading-[1.4]">
+                Awas! Bank &amp; Sekuritas Bisa Kena Denda Rp15 Miliar Karena Influencer
+              </h2>
+              <p class="font-jakarta text-[13.5px] text-[#5e5e5e] leading-[1.4] line-clamp-4">
+                Lorem ipsum dolor sit amet consectetur. Et arcu tincidunt in nulla tristique. Ut feugiat lectus lobortis neque neque est lobortis ut pulvinar. Orci vestibulum tortor amet mollis amet enim risus. Sodales gravida augue augue in.
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-2 text-[13.5px] text-[#5e5e5e]">
+              <span>By Angelo Raiders</span>
+              <span>200 views</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Column 3: Portfolio Companies Sidebar (Card Style used ONLY here) -->
+        <aside class="lg:col-span-4 space-y-4">
+          <div class="wireframe-card p-5 space-y-4 font-mono text-xs">
+            <div class="flex items-center justify-between py-2 border-b border-black/12">
+              <div>
+                <div class="font-bold text-sm text-[#0a0a0a]">NSSS</div>
+                <div class="text-[11px] text-[#868686] mt-0.5">7,572.40</div>
+              </div>
+              <span class="text-emerald-700 font-sans font-bold text-xs">▲ 8.4%</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-black/12">
+              <div>
+                <div class="font-bold text-sm text-[#0a0a0a]">FILM</div>
+                <div class="text-[11px] text-[#868686] mt-0.5">6,243.15</div>
+              </div>
+              <span class="text-emerald-700 font-sans font-bold text-xs">▲ 7.1%</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-black/12">
+              <div>
+                <div class="font-bold text-sm text-[#0a0a0a]">MKPI</div>
+                <div class="text-[11px] text-[#868686] mt-0.5">9,812.30</div>
+              </div>
+              <span class="text-emerald-700 font-sans font-bold text-xs">▲ 9.7%</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b border-black/12">
+              <div>
+                <div class="font-bold text-sm text-[#0a0a0a]">RLCO</div>
+                <div class="text-[11px] text-[#868686] mt-0.5">5,429.80</div>
+              </div>
+              <span class="text-emerald-700 font-sans font-bold text-xs">▲ 6.5%</span>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <div>
+                <div class="font-bold text-sm text-[#0a0a0a]">NSSP</div>
+                <div class="text-[11px] text-[#868686] mt-0.5">8,105.90</div>
+              </div>
+              <span class="text-emerald-700 font-sans font-bold text-xs">▲ 8.9%</span>
+            </div>
+          </div>
+
+          <div class="pt-2 text-center">
+            <a href="#" class="font-switzer font-semibold text-xs text-[#0a0a0a] hover:underline">See Details Portolio</a>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- Horizontal Line Divider -->
+      <div class="w-full border-t border-black/12 my-8 lg:my-12"></div>
+
+      <!-- Bottom 4 Minimalist Article Columns Row -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
+        
+        <!-- Column 1 -->
+        <article class="space-y-6 group cursor-pointer lg:pr-6 lg:border-r lg:border-black/12">
+          <div class="flex items-center justify-between text-[13.5px]">
+            <div class="bg-[#0a0a0a] text-white px-3 py-1 rounded-[4px]">
+              <span class="font-switzer font-medium text-[10.5px] tracking-[0.56px] uppercase">Press Releases</span>
+            </div>
+            <span class="font-switzer font-normal text-[#0a0a0a]">18 Juli 2026</span>
+          </div>
+          <h4 class="font-switzer font-medium text-[18px] text-[#0a0a0a] group-hover:underline leading-[1.4] min-h-[50px]">
+            Global Tech Stocks Surge Amid AI Breakthrough Announcements
+          </h4>
+          <div class="flex items-center justify-between text-[13.5px] text-[#5e5e5e]">
+            <span>By Jamie Lin</span>
+            <span>350 views</span>
+          </div>
+        </article>
+
+        <!-- Column 2 -->
+        <article class="space-y-6 group cursor-pointer lg:px-6 lg:border-r lg:border-black/12">
+          <div class="flex items-center justify-between text-[13.5px]">
+            <div class="bg-[#0a0a0a] text-white px-3 py-1 rounded-[4px]">
+              <span class="font-switzer font-medium text-[10.5px] tracking-[0.56px] uppercase">Corporates News</span>
+            </div>
+            <span class="font-switzer font-normal text-[#0a0a0a]">18 Juli 2026</span>
+          </div>
+          <h4 class="font-switzer font-medium text-[18px] text-[#0a0a0a] group-hover:underline leading-[1.4] min-h-[50px]">
+            Energy Sector Boosted by Rising Oil Prices; Shares Jump 5%
+          </h4>
+          <div class="flex items-center justify-between text-[13.5px] text-[#5e5e5e]">
+            <span>By Carlos Mendez</span>
+            <span>420 views</span>
+          </div>
+        </article>
+
+        <!-- Column 3 -->
+        <article class="space-y-6 group cursor-pointer lg:px-6 lg:border-r lg:border-black/12">
+          <div class="flex items-center justify-between text-[13.5px]">
+            <div class="bg-[#0a0a0a] text-white px-3 py-1 rounded-[4px]">
+              <span class="font-switzer font-medium text-[10.5px] tracking-[0.56px] uppercase">Events</span>
+            </div>
+            <span class="font-switzer font-normal text-[#0a0a0a]">18 Juli 2026</span>
+          </div>
+          <h4 class="font-switzer font-medium text-[18px] text-[#0a0a0a] group-hover:underline leading-[1.4] min-h-[50px]">
+            Retail Stocks Dip as Consumer Spending Shows Signs of Cooling
+          </h4>
+          <div class="flex items-center justify-between text-[13.5px] text-[#5e5e5e]">
+            <span>By Priya Singh</span>
+            <span>310 views</span>
+          </div>
+        </article>
+
+        <!-- Column 4 -->
+        <article class="space-y-6 group cursor-pointer lg:pl-6">
+          <div class="flex items-center justify-between text-[13.5px]">
+            <div class="bg-[#0a0a0a] text-white px-3 py-1 rounded-[4px]">
+              <span class="font-switzer font-medium text-[10.5px] tracking-[0.56px] uppercase">Media Coverages</span>
+            </div>
+            <span class="font-switzer font-normal text-[#0a0a0a]">18 Juli 2026</span>
+          </div>
+          <h4 class="font-switzer font-medium text-[18px] text-[#0a0a0a] group-hover:underline leading-[1.4] min-h-[50px]">
+            Tech Giant Reports Record Quarterly Earnings, Shares Up 8%
+          </h4>
+          <div class="flex items-center justify-between text-[13.5px] text-[#5e5e5e]">
+            <span>By Michael Chen</span>
+            <span>475 views</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Podcast & Insight Section (Dark Wireframe Box) -->
+  <section class="w-full py-16 px-6 lg:px-12 bg-[#0a0a0a] text-white">
+    <div class="max-w-[1350px] mx-auto space-y-8">
+      
+      <div class="flex items-end justify-between">
+        <div class="space-y-1">
+          <span class="text-xs uppercase tracking-widest text-white/60">What's New in Samuel Sekuritas</span>
+          <h2 class="font-switzer font-semibold text-3xl text-white">Podcast &amp; Insight</h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="w-8 h-8 rounded-full border border-white/30 text-white flex items-center justify-center">&larr;</button>
+          <button class="w-8 h-8 rounded-full bg-white text-[#0a0a0a] flex items-center justify-center font-bold">&rarr;</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="space-y-4 text-white group cursor-pointer">
+          <div class="wireframe-placeholder-dark w-full aspect-[16/9] rounded-[10px] flex items-center justify-center">
+            <span class="text-xs font-mono text-white/50">[ PODCAST VIDEO 1 ]</span>
+          </div>
+          <div class="space-y-3">
+            <span class="px-3 py-1 bg-[#F39325] text-[#1F1F1F] text-[11px] font-bold rounded uppercase tracking-wider inline-block">VIDEO PODCAST</span>
+            <h3 class="font-switzer font-medium text-lg text-white group-hover:text-amber-300 transition">Podcast Investasi Saham: Tips Memilih Emiten Unggulan</h3>
+          </div>
+          <div class="text-sm text-white/80 flex justify-between">
+            <span>22 Juli 2026</span>
+            <span>4.5k views</span>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-white group cursor-pointer">
+          <div class="wireframe-placeholder-dark w-full aspect-[16/9] rounded-[10px] flex items-center justify-center">
+            <span class="text-xs font-mono text-white/50">[ WEBINAR VIDEO 2 ]</span>
+          </div>
+          <div class="space-y-3">
+            <span class="px-3 py-1 bg-[#F39325] text-[#1F1F1F] text-[11px] font-bold rounded uppercase tracking-wider inline-block">INTERVIEWS</span>
+            <h3 class="font-switzer font-medium text-lg text-white group-hover:text-amber-300 transition">Analisis Tren Saham Teknologi di Indonesia 2026</h3>
+          </div>
+          <div class="text-sm text-white/80 flex justify-between">
+            <span>25 Juli 2026</span>
+            <span>2.1k views</span>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-white group cursor-pointer">
+          <div class="wireframe-placeholder-dark w-full aspect-[16/9] rounded-[10px] flex items-center justify-center">
+            <span class="text-xs font-mono text-white/50">[ REPORT VIDEO 3 ]</span>
+          </div>
+          <div class="space-y-3">
+            <span class="px-3 py-1 bg-[#F39325] text-[#1F1F1F] text-[11px] font-bold rounded uppercase tracking-wider inline-block">INDUSTRY INSIGHT</span>
+            <h3 class="font-switzer font-medium text-lg text-white group-hover:text-amber-300 transition">Update Regulasi BEI dan Dampaknya ke Pasar Saham Lokal</h3>
+          </div>
+          <div class="text-sm text-white/80 flex justify-between">
+            <span>30 Juli 2026</span>
+            <span>3.9k views</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Category Carousels -->
+  <section class="w-full py-16 px-6 lg:px-12 bg-white space-y-16">
+    <div class="max-w-[1350px] mx-auto space-y-16">
+      
+      <!-- Category 1: Corporate news -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-4 space-y-4">
+          <h2 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Corporate news</h2>
+          <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            Stay updated with the latest corporate news and announcements from Samuel Sekuritas Indonesia.
+          </p>
+          <a href="#" class="wireframe-btn-pill-dark text-xs inline-block">Read more</a>
+        </div>
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ CARD PHOTO 1 ]</span>
+            </div>
+            <h3 class="font-switzer font-medium text-xs text-[#0a0a0a] group-hover:text-blue-600 transition">Pasar Saham Indonesia Menguat Dipicu Laporan Keuangan...</h3>
+            <span class="text-[10px] text-[#9a9a9a] block">15 JUL 2026 · By Risa S.</span>
+          </div>
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ CARD PHOTO 2 ]</span>
+            </div>
+            <h3 class="font-switzer font-medium text-xs text-[#0a0a0a] group-hover:text-blue-600 transition">Emiten Teknologi Meningkatkan Modal, Saham Melonjak...</h3>
+            <span class="text-[10px] text-[#9a9a9a] block">15 JUL 2026 · By Raditya P.</span>
+          </div>
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ CARD PHOTO 3 ]</span>
+            </div>
+            <h3 class="font-switzer font-medium text-xs text-[#0a0a0a] group-hover:text-blue-600 transition">Regulasi Baru OJK Perketat Pengawasan Emiten di Bursa...</h3>
+            <span class="text-[10px] text-[#9a9a9a] block">15 JUL 2026 · By Rani W.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Media Coverage -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-8 border-t border-black/12">
+        <div class="lg:col-span-4 space-y-4">
+          <h2 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Media Coverage</h2>
+          <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            Explore media coverage and news highlights featuring Samuel Sekuritas in financial publications.
+          </p>
+          <a href="#" class="inline-flex items-center gap-1 font-switzer font-semibold text-xs text-[#0a0a0a] hover:underline">
+            Read more &rarr;
+          </a>
+          <div class="flex items-center gap-2 pt-2">
+            <button class="w-7 h-7 rounded-full border border-black/20 text-[#0a0a0a] flex items-center justify-center text-xs hover:bg-neutral-100 transition">&larr;</button>
+            <button class="w-7 h-7 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center text-xs font-bold shadow-sm">&rarr;</button>
+          </div>
+        </div>
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ CARD PHOTO 1 ]</span>
+            </div>
+            <h3 class="font-switzer font-medium text-xs text-[#0a0a0a] group-hover:text-blue-600 transition">Pasar Saham Indonesia Menguat Didukung Kinerja Emiten...</h3>
+            <span class="text-[10px] text-[#9a9a9a] block">20 JUL 2026 · By Ari H. · 4.1k</span>
+          </div>
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ CARD PHOTO 2 ]</span>
+            </div>
+            <h3 class="font-switzer font-medium text-xs text-[#0a0a0a] group-hover:text-blue-600 transition">Investor Asing Mulai Masuk, IHSG Tembus Level Tertinggi...</h3>
+            <span class="text-[10px] text-[#9a9a9a] block">20 JUL 2026 · By Rere S. · 2.9k</span>
+          </div>
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+              <span class="text-[10px] font-mono text-[#9a9a9a]">[ CARD PHOTO 3 ]</span>
+            </div>
+            <h3 class="font-switzer font-medium text-xs text-[#0a0a0a] group-hover:text-blue-600 transition">Regulator Tegaskan Aturan Baru Perdagangan Saham Online</h3>
+            <span class="text-[10px] text-[#9a9a9a] block">20 JUL 2026 · By Maya S. · 1.8k</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3: Press Release -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-8 border-t border-black/12">
+        <div class="lg:col-span-4 space-y-4">
+          <h2 class="font-switzer font-bold text-2xl text-[#0a0a0a]">Press Release</h2>
+          <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            Access the latest press releases and official statements from Samuel Sekuritas and our subsidiary entities.
+          </p>
+          <a href="#" class="inline-flex items-center gap-1 font-switzer font-semibold text-xs text-[#0a0a0a] hover:underline">
+            Read more &rarr;
+          </a>
+          <div class="flex items-center gap-2 pt-2">
+            <button class="w-7 h-7 rounded-full border border-black/20 text-[#0a0a0a] flex items-center justify-center text-xs hover:bg-neutral-100 transition">&larr;</button>
+            <button class="w-7 h-7 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center text-xs font-bold shadow-sm">&rarr;</button>
+          </div>
+        </div>
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+                <span class="text-[10px] font-mono text-[#9a9a9a]">[ PRESS PHOTO 1 ]</span>
+              </div>
+              <h3 class="font-switzer font-semibold text-xs text-[#0a0a0a] group-hover:text-blue-600 transition leading-snug line-clamp-2">
+                IHSG Ditutup Menguat, Investor Optimis Sektor Teknologi Tumbuh
+              </h3>
+            </div>
+            <div class="flex items-center justify-between text-[10px] text-[#9a9a9a]">
+              <span>20 JUL 2026</span>
+              <span>By Surya Santoso · 3.2k</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+                <span class="text-[10px] font-mono text-[#9a9a9a]">[ PRESS PHOTO 2 ]</span>
+              </div>
+              <h3 class="font-switzer font-semibold text-xs text-[#0a0a0a] group-hover:text-blue-600 transition leading-snug line-clamp-2">
+                Emiten Energi Berkelanjutan PLN Raih 5% Penurunan Keuangan
+              </h3>
+            </div>
+            <div class="flex items-center justify-between text-[10px] text-[#9a9a9a]">
+              <span>20 JUL 2026</span>
+              <span>By Fikri Anshor · 1.9k</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+                <span class="text-[10px] font-mono text-[#9a9a9a]">[ PRESS PHOTO 3 ]</span>
+              </div>
+              <h3 class="font-switzer font-semibold text-xs text-[#0a0a0a] group-hover:text-blue-600 transition leading-snug line-clamp-2">
+                OJK Rilis Aturan Aturan Baru Perlindungan Investor Pasar Modal
+              </h3>
+            </div>
+            <div class="flex items-center justify-between text-[10px] text-[#9a9a9a]">
+              <span>20 JUL 2026</span>
+              <span>By Eko Putri · 5.0k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4: Event -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-8 border-t border-black/12">
+        <div class="lg:col-span-4 space-y-4">
+          <h2 class="font-switzer font-bold text-2xl text-[#0a0a0a]">Event</h2>
+          <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            Explore the latest event from Samuel Sekuritas and our subsidiary entities.
+          </p>
+          <a href="#" class="inline-flex items-center gap-1 font-switzer font-semibold text-xs text-[#0a0a0a] hover:underline">
+            Read more &rarr;
+          </a>
+          <div class="flex items-center gap-2 pt-2">
+            <button class="w-7 h-7 rounded-full border border-black/20 text-[#0a0a0a] flex items-center justify-center text-xs hover:bg-neutral-100 transition">&larr;</button>
+            <button class="w-7 h-7 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center text-xs font-bold shadow-sm">&rarr;</button>
+          </div>
+        </div>
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+                <span class="text-[10px] font-mono text-[#9a9a9a]">[ EVENT PHOTO 1 ]</span>
+              </div>
+              <h3 class="font-switzer font-semibold text-xs text-[#0a0a0a] group-hover:text-blue-600 transition leading-snug line-clamp-2">
+                BEI Rilis Aturan Baru untuk Listing Perusahaan Teknologi
+              </h3>
+            </div>
+            <div class="flex items-center justify-between text-[10px] text-[#9a9a9a]">
+              <span>20 JUL 2026</span>
+              <span>By Dwi Prasetyo · 2.5k</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 group cursor-pointer flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="wireframe-placeholder-light w-full aspect-[16/10] rounded-[10px] flex items-center justify-center">
+                <span class="text-[10px] font-mono text-[#9a9a9a]">[ EVENT PHOTO 2 ]</span>
+              </div>
+              <h3 class="font-switzer font-semibold text-[10px] text-[#0a0a0a] group-hover:text-blue-600 transition leading-snug line-clamp-2">
+                Investor Asing Berba Saham Startup Indonesia, Ini Alasannya
+              </h3>
+            </div>
+            <div class="flex items-center justify-between text-[10px] text-[#9a9a9a]">
+              <span>20 JUL 2026</span>
+              <span>By Dian Ramdani · 3.9k</span>
+            </div>
+          </div>
+              <span>By Dian Ramdani · 3.9k</span>
+            </div>
+          </div>
+
+          <div class="wireframe-card p-4 space-y-3 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="wireframe-placeholder-light w-full aspect-[16/10] flex items-center justify-center">
+                <span class="text-[10px] font-mono text-[#9a9a9a]">[ EVENT PHOTO 3 ]</span>
+              </div>
+              <h3 class="font-switzer font-semibold text-xs text-[#0a0a0a] leading-snug line-clamp-2">
+                IHSG Ditutup Menguat Ditempuh Sektor Energi dan Infrastruktur
+              </h3>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-black/12 text-[10px] text-[#9a9a9a]">
+              <span>20 JUL 2026</span>
+              <span>By Rizky Syafitri · 4.7k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Card -->
+  <section class="w-full py-12 px-6 lg:px-12 bg-neutral-100">
+    <div class="max-w-[1350px] mx-auto">
+      <div class="wireframe-card bg-[#0a0a0a] text-white p-8 lg:p-12 space-y-6">
+        <h2 class="font-switzer font-semibold text-2xl lg:text-3xl text-white">
+          Stay on Top of Stock Market and Finance Regulation
+        </h2>
+        <p class="font-jakarta text-xs text-white/80 max-w-xl">
+          Subscribe to our newsletter to receive daily updates packed with valuable insights and trends straight to your inbox.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 max-w-md">
+          <input type="email" placeholder="you@email.com" class="px-4 py-2.5 bg-white text-[#0a0a0a] text-xs rounded-full w-full" />
+          <button class="px-6 py-2.5 bg-[#0a0a0a] border border-white text-white text-xs font-semibold rounded-full uppercase tracking-wider shrink-0">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Component Wireframe -->
+  <footer id="main-footer" class="w-full bg-[#0a0a0a] text-white">
+    <div class="footer-ticker">
+      <div class="footer-ticker-content">
+        Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <div class="max-w-[1350px] mx-auto py-16 px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 font-switzer border-b border-white/18">
+      
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <h3 class="font-medium text-2xl text-white">Samuel Group</h3>
+        <div>
+          <h4 class="font-medium text-xl text-white pb-1">Headquarters</h4>
+          <p class="text-[15px] text-white/80">Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-2 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">About Us</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="company-profile-wireframe.html" class="hover:text-white transition">Company Profile</a></li>
+          <li><a href="history-milestones-wireframe.html" class="hover:text-white transition">History &amp; Milestones</a></li>
+          <li><a href="legal-documents-wireframe.html" class="hover:text-white transition">Legal Documents</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Explore</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="business-units-wireframe.html" class="hover:text-white transition">Business Units</a></li>
+          <li><a href="investor-highlights-wireframe.html" class="hover:text-white transition">Investor Relations</a></li>
+          <li><a href="newsroom-wireframe.html" class="hover:text-white transition">Newsroom</a></li>
+          <li><a href="careers-wireframe.html" class="hover:text-white transition">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Contact</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Client support</a></li>
+          <li><a href="ir-contact-wireframe.html" class="hover:text-white transition">Investor relations</a></li>
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Media &amp; PR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="max-w-[1350px] mx-auto py-8 px-6 lg:px-12 text-center font-switzer text-[15px] text-white/80">
+      © 2026 Samuel Group · All rights reserved · Disclosure Statement
+    </div>
+  </footer>
+
+  <!-- Floating Wireframe Mode Switcher Pill -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-1.5 font-sans">
+    <div class="px-3 py-1 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full text-[11px] text-neutral-300 shadow-lg pointer-events-none">
+      Design by Timedoor Indonesia
+    </div>
+    <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
+      <a href="newsroom.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="newsroom-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+    </div>
+  </div>
+</body>
+</html>

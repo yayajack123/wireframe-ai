@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Profile Wireframe — Samuel Group</title>
+
+  <!-- Fontshare Switzer & Google Plus Jakarta Sans -->
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Switzer', '-apple-system', 'sans-serif'],
+            switzer: ['Switzer', 'sans-serif'],
+            jakarta: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Wireframe Custom CSS -->
+  <link rel="stylesheet" href="wireframe.css" />
+</head>
+
+<body
+  class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased selection:bg-black selection:text-white">
+
+  <!-- Header / Navbar Component -->
+  <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50 transition-colors duration-200">
+    <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between"
+      aria-label="Main Navigation">
+
+      <!-- Brand Box -->
+      <a href="home-wireframe.html" class="wireframe-logo-box" aria-label="Samuel Group Home">
+        SAMUEL GROUP
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
+        <a href="home-wireframe.html"
+          class="px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">Home</a>
+
+        <!-- About Us Dropdown -->
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>About Us</span>
+            <svg class="w-4 h-4 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="company-profile-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Company
+              Profile</a>
+            <a href="history-milestones-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">History &amp; Milestones</a>
+            <a href="legal-documents-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Legal Documents</a>
+          </div>
+        </div>
+
+        <!-- Investors Dropdown -->
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Investors</span>
+            <svg class="w-4 h-4 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="dropdown-menu absolute top-full left-0 w-56 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="investor-highlights-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investment Highlights</a>
+            <a href="market-disclosure-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Market &amp; Disclosure</a>
+            <a href="reports-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Reports Archive</a>
+            <a href="ir-contact-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investor Relations Contact</a>
+          </div>
+        </div>
+
+        <a href="governance-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Governance</a>
+
+        <!-- Newsroom Dropdown -->
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Newsroom</span>
+            <svg class="w-4 h-4 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="newsroom-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">News &amp; Press Releases</a>
+            <a href="insights-wireframe.html"
+              class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Podcast &amp; Insights</a>
+          </div>
+        </div>
+
+        <a href="careers-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Careers</a>
+      </div>
+
+      <!-- Right Contact CTA -->
+      <div class="hidden lg:flex items-center shrink-0">
+        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#0a0a0a]" aria-label="Toggle Menu">
+        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer Overlay & Menu -->
+    <div id="mobile-drawer"
+      class="mobile-drawer lg:hidden hidden fixed top-[65px] left-0 right-0 bottom-0 bg-white border-t border-black/12 p-6 flex-col justify-between overflow-y-auto">
+      <div class="flex flex-col gap-3 font-switzer">
+        <a href="home-wireframe.html"
+          class="text-base font-semibold text-[#0a0a0a] py-2 border-b border-neutral-200">Company Profile</a>
+        <a href="history-milestones-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">History &amp; Milestones</a>
+        <a href="legal-documents-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Legal Documents</a>
+        <a href="investor-highlights-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Investment Highlights</a>
+        <a href="market-disclosure-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Market &amp; Disclosure</a>
+        <a href="reports-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Reports Archive</a>
+        <a href="ir-contact-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Investor Relations Contact</a>
+        <a href="governance-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Corporate Governance</a>
+        <a href="newsroom-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Newsroom</a>
+        <a href="insights-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Podcast &amp; Insights</a>
+        <a href="careers-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Careers</a>
+        <a href="contact-wireframe.html"
+          class="text-base font-medium text-[#0a0a0a] py-2 border-b border-neutral-200">Contact Us</a>
+      </div>
+
+      <div class="mt-8">
+        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark w-full text-center">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section Wireframe (Figma Node: 11476:13027) -->
+  <section id="home"
+    class="w-full bg-[#0a0a0a] text-white py-20 lg:py-28 px-6 lg:px-12 border-b border-white/10 relative overflow-hidden">
+
+    <div class="relative z-10 max-w-[1350px] mx-auto flex flex-col justify-between min-h-[480px] lg:min-h-[560px]">
+
+      <!-- Hero Headline & Subtitle Container -->
+      <div class="flex flex-col items-start gap-6 max-w-[660px]">
+        <p class="font-switzer font-medium text-[12px] uppercase tracking-[1.44px] text-white/70">
+          About Us · Company Profile
+        </p>
+        <h1
+          class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[64.8px] leading-[1.08] tracking-[-1.3px] text-white">
+          Your Lifelong<br />Investment Partner
+        </h1>
+        <p class="font-jakarta text-[15px] text-white/85 leading-relaxed max-w-[480px]">
+          Samuel Tumbuh Bersama (STB) is a premier investment holding company at the forefront of Indonesia’s economy
+          under the visionary leadership of Teguh Hartanto and Miming Satyono, driven by commitment to sustainable
+          growth.
+        </p>
+
+        <div class="pt-2">
+          <a href="#about" class="wireframe-btn-hero-pill">
+            <span>Explore the group</span>
+            <div class="wireframe-btn-arrow-badge">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Floating Row: Press Release Card (Figma Node: 11476:13030) -->
+      <div class="w-full flex justify-end pt-10">
+        <a href="newsroom-wireframe.html"
+          class="block bg-white text-black p-4 rounded-lg w-full sm:w-[420px] shadow-2xl hover:bg-neutral-100 transition duration-200 border border-white/20 group">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between gap-4">
+              <span
+                class="bg-[#0a0a0a] text-white px-2.5 py-1 rounded text-[10px] font-switzer font-medium tracking-[0.56px] uppercase">
+                PRESS RELEASES
+              </span>
+              <span class="font-switzer font-medium text-[11px] text-neutral-600 tracking-[0.64px] uppercase">
+                July 19, 2026
+              </span>
+            </div>
+            <div class="flex items-center justify-between gap-4">
+              <p
+                class="font-switzer font-medium text-[15px] text-[#0a0a0a] leading-snug flex-1 group-hover:text-black transition">
+                2025 Sustainability Report Officially Released
+              </p>
+              <div
+                class="w-8 h-8 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section Wireframe (Figma Node: 11489:13245) -->
+  <section id="about" class="w-full bg-[#0a0a0a] text-white py-20 lg:py-24 px-6 lg:px-12 border-b border-white/10">
+    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+
+      <!-- Left Column: Title & CTA -->
+      <div class="lg:col-span-4 flex flex-col justify-between">
+        <div>
+          <span class="font-switzer font-medium text-[12px] uppercase tracking-[1.44px] text-white/70 block mb-3">
+            About STB
+          </span>
+          <h2
+            class="font-switzer font-semibold text-3xl sm:text-4xl lg:text-[43.2px] leading-[1.15] tracking-[-0.43px] text-white">
+            Indonesia’s Premier<br class="hidden sm:inline" /> Investment Holding<br class="hidden sm:inline" /> Company
+          </h2>
+        </div>
+
+        <div class="pt-8 lg:pt-0">
+          <a href="history-milestones-wireframe.html" class="wireframe-btn-hero-pill">
+            <span>More About Us</span>
+            <div class="wireframe-btn-arrow-badge">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Center Column: Visual Frame Placeholder -->
+      <div class="lg:col-span-4 flex justify-center items-center">
+        <div class="wireframe-placeholder-dark w-full aspect-[4/5] rounded-xl flex flex-col justify-end p-4">
+          <div class="bg-black/70 backdrop-blur-sm p-3 rounded border border-white/10 text-center">
+            <p class="font-jakarta text-[14px] text-white/90">
+              Amidst today’s busy world,
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Paragraph Description -->
+      <div class="lg:col-span-4 flex flex-col justify-end">
+        <div class="space-y-4 font-jakarta text-[14.5px] text-white/85 leading-relaxed">
+          <p>
+            Samuel Tumbuh Bersama (STB) serves as the ultimate gateway for long-term business partnerships and
+            opportunities for entities alike seeking to engage in Indonesia’s dynamic market, guided by the visionary
+            leadership of Teguh Hartanto and Miming Satyono.
+          </p>
+          <p>
+            The company is profoundly committed to fostering sustainable business growth by leveraging Indonesia’s
+            inherent strengths, many of which lies in its geographical position and abundant resources. As a holding
+            company, STB realizes this vision through operating a diverse range of wholly-owned and minority-owned
+            businesses across various sectors in Indonesia.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Business Unit Section Wireframe (Figma Node: 11489:13260) -->
+  <section id="business-unit" class="w-full py-20 lg:py-24 px-6 lg:px-12 bg-white border-b border-black/12">
+    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+      <!-- Left Column: Featured Image Placeholder -->
+      <div class="lg:col-span-6 w-full">
+        <div
+          class="wireframe-placeholder-light w-full aspect-[4/3] lg:aspect-[885/790] rounded-xl flex flex-col justify-end p-4">
+          <div
+            class="bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded text-[11px] font-switzer text-[#5e5e5e] tracking-[1.1px] uppercase self-start">
+            Business Unit — Featured visual placeholder
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Content & Business Units List -->
+      <div class="lg:col-span-6 flex flex-col gap-8">
+        <div>
+          <span class="wireframe-eyebrow">Operating Entities</span>
+          <h2
+            class="font-switzer font-semibold text-3xl sm:text-4xl lg:text-[43.2px] leading-[1.15] tracking-[-0.43px] text-[#0a0a0a]">
+            Business Unit
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-6">
+
+          <!-- Unit 1: Samuel Sekuritas Indonesia -->
+          <div class="flex flex-col gap-3 items-start">
+            <h3 class="font-switzer font-medium text-xl lg:text-2xl text-[#0a0a0a]">
+              Samuel Sekuritas Indonesia
+            </h3>
+            <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+              Dedicated portal for modern securities trading, research generation, institutional brokerage, and
+              comprehensive investment banking interfaces.
+            </p>
+            <a href="https://sam.co.id" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 font-switzer font-medium text-[14px] text-[#0a0a0a] hover:opacity-75 pt-1">
+              <span>Go to sam.co.id</span>
+              <div class="w-6 h-6 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center text-xs">
+                →
+              </div>
+            </a>
+          </div>
+
+          <hr class="border-t border-black/12 my-1" />
+
+          <!-- Unit 2: Samuel Aset Manajemen -->
+          <div class="flex flex-col gap-3 items-start">
+            <h3 class="font-switzer font-medium text-xl lg:text-2xl text-[#0a0a0a]">
+              Samuel Aset Manajemen
+            </h3>
+            <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+              High-end workspace layout mapping investment products, mutual funds list, real-time NAV, asset management
+              tools, and online account setup.
+            </p>
+            <a href="https://samuel.co.id" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 font-switzer font-medium text-[14px] text-[#0a0a0a] hover:opacity-75 pt-1">
+              <span>Go to samuel.co.id</span>
+              <div class="w-6 h-6 rounded-full bg-[#0a0a0a] text-white flex items-center justify-center text-xs">
+                →
+              </div>
+            </a>
+          </div>
+
+          <hr class="border-t border-black/12 my-1" />
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Investment Portfolio Section Wireframe (Figma Node: 11489:13294) -->
+  <section id="our-investment" class="w-full py-20 lg:py-24 px-6 lg:px-12 bg-[#f6f6f6] border-b border-black/12">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-10">
+
+      <!-- Top Row: Section Title & CTA Button -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <span class="wireframe-eyebrow">Strategic Holdings</span>
+          <h2
+            class="font-switzer font-semibold text-3xl sm:text-4xl lg:text-[43.2px] leading-[1.15] tracking-[-0.43px] text-[#0a0a0a]">
+            Our Investment Portfolio
+          </h2>
+        </div>
+
+        <a href="reports-wireframe.html" class="wireframe-btn-pill-dark">
+          View Annual Report
+        </a>
+      </div>
+
+      <hr class="border-t border-black/12" />
+
+      <!-- Investment Cards Grid (2x2 Layout) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Card 1: Palm Oil Plantation / CPO -->
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-light w-full h-[220px] sm:h-[260px] flex flex-col justify-end p-3">
+            <div
+              class="bg-white/90 px-2.5 py-1 rounded text-[11px] font-switzer text-[#5e5e5e] tracking-[1.1px] uppercase self-start">
+              Plantation visual placeholder
+            </div>
+          </div>
+          <div class="flex flex-col gap-2.5 items-start">
+            <h3 class="font-switzer font-medium text-xl sm:text-2xl text-[#0a0a0a]">
+              Palm Oil Plantation / CPO
+            </h3>
+            <span
+              class="border border-black/15 rounded-full px-3 py-1 text-[12px] font-switzer text-[#0a0a0a] uppercase tracking-wider">
+              NSSS
+            </span>
+            <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed pt-1">
+              Lorem ipsum dolor sit amet consectetur. A sapien rutrum odio nibh id eros id vel integer. Fames dignissim
+              etiam neque metus pretium venenatis commodo sit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Media & Entertainment -->
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-light w-full h-[220px] sm:h-[260px] flex flex-col justify-end p-3">
+            <div
+              class="bg-white/90 px-2.5 py-1 rounded text-[11px] font-switzer text-[#5e5e5e] tracking-[1.1px] uppercase self-start">
+              Media visual placeholder
+            </div>
+          </div>
+          <div class="flex flex-col gap-2.5 items-start">
+            <h3 class="font-switzer font-medium text-xl sm:text-2xl text-[#0a0a0a]">
+              Media &amp; Entertainment
+            </h3>
+            <span
+              class="border border-black/15 rounded-full px-3 py-1 text-[12px] font-switzer text-[#0a0a0a] uppercase tracking-wider">
+              FILM
+            </span>
+            <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed pt-1">
+              Lorem ipsum dolor sit amet consectetur. Urna duis enim eu odio vestibulum aliquet faucibus. Feugiat et
+              senectus volutpat et sit augue id purus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Real Estate & Property -->
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-light w-full h-[220px] sm:h-[260px] flex flex-col justify-end p-3">
+            <div
+              class="bg-white/90 px-2.5 py-1 rounded text-[11px] font-switzer text-[#5e5e5e] tracking-[1.1px] uppercase self-start">
+              Property visual placeholder
+            </div>
+          </div>
+          <div class="flex flex-col gap-2.5 items-start">
+            <h3 class="font-switzer font-medium text-xl sm:text-2xl text-[#0a0a0a]">
+              Real Estate &amp; Property
+            </h3>
+            <span
+              class="border border-black/15 rounded-full px-3 py-1 text-[12px] font-switzer text-[#0a0a0a] uppercase tracking-wider">
+              MKPI
+            </span>
+            <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed pt-1">
+              Lorem ipsum dolor sit amet consectetur. A sapien rutrum odio nibh id eros id vel integer. Fames dignissim
+              etiam neque metus pretium venenatis commodo sit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4: Energy & Resources -->
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-light w-full h-[220px] sm:h-[260px] flex flex-col justify-end p-3">
+            <div
+              class="bg-white/90 px-2.5 py-1 rounded text-[11px] font-switzer text-[#5e5e5e] tracking-[1.1px] uppercase self-start">
+              Energy visual placeholder
+            </div>
+          </div>
+          <div class="flex flex-col gap-2.5 items-start">
+            <h3 class="font-switzer font-medium text-xl sm:text-2xl text-[#0a0a0a]">
+              Energy &amp; Resources
+            </h3>
+            <span
+              class="border border-black/15 rounded-full px-3 py-1 text-[12px] font-switzer text-[#0a0a0a] uppercase tracking-wider">
+              RLCO
+            </span>
+            <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed pt-1">
+              Lorem ipsum dolor sit amet consectetur. A sapien rutrum odio nibh id eros id vel integer. Fames dignissim
+              etiam neque metus pretium venenatis commodo sit.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sustainability Section Wireframe (Figma Node: 11495:20008) -->
+  <section id="sustainability"
+    class="w-full bg-[#0a0a0a] text-white py-20 lg:py-24 px-6 lg:px-12 border-b border-white/10">
+    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+      <!-- Left Column: Title & CTA -->
+      <div class="lg:col-span-5 flex flex-col items-start gap-6">
+        <span class="font-switzer font-medium text-[12px] uppercase tracking-[1.44px] text-white/70">
+          Sustainability Strategy
+        </span>
+        <h2
+          class="font-switzer font-semibold text-3xl sm:text-4xl lg:text-[43.2px] leading-[1.15] tracking-[-0.43px] text-white">
+          STB’s blueprint for the future is all about sustainability
+        </h2>
+        <div class="pt-2">
+          <a href="sustainability-wireframe.html" class="wireframe-btn-hero-pill">
+            <span>Go to Sustainability</span>
+            <div class="wireframe-btn-arrow-badge">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: 2x2 ESG Wireframe Cards Grid -->
+      <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <!-- ESG Card 1: Overview -->
+        <div class="p-6 rounded-lg bg-white/5 border border-white/18 flex flex-col gap-4">
+          <div class="flex flex-col gap-2 items-start">
+            <span class="bg-white/20 border border-white/30 px-3 py-1 rounded-full text-[12px] font-switzer text-white">
+              Overview
+            </span>
+            <h3 class="font-switzer font-medium text-lg text-white">
+              ESG rating by Sustainalytics
+            </h3>
+          </div>
+          <div class="flex flex-col gap-1 text-white pt-2">
+            <p class="font-jakarta text-[12px] text-white/70">*As of 2026</p>
+            <p class="font-jakarta text-[16px] font-medium text-white">Achieved the group's highest ESG grade</p>
+          </div>
+        </div>
+
+        <!-- ESG Card 2: Environment -->
+        <div class="p-6 rounded-lg bg-white/5 border border-white/18 flex flex-col gap-4">
+          <div class="flex flex-col gap-2 items-start">
+            <span class="bg-white/20 border border-white/30 px-3 py-1 rounded-full text-[12px] font-switzer text-white">
+              Environment
+            </span>
+            <h3 class="font-switzer font-medium text-lg text-white">
+              Reduced greenhouse gas emissions
+            </h3>
+          </div>
+          <div class="flex flex-col gap-1 text-white pt-2">
+            <p class="font-jakarta text-[12px] text-white/70">*Compared to 2023 baseline</p>
+            <p class="font-jakarta text-[16px] font-medium text-white">STB 15.2% · Group 9.8%</p>
+          </div>
+        </div>
+
+        <!-- ESG Card 3: Social -->
+        <div class="p-6 rounded-lg bg-white/5 border border-white/18 flex flex-col gap-4">
+          <div class="flex flex-col gap-2 items-start">
+            <span class="bg-white/20 border border-white/30 px-3 py-1 rounded-full text-[12px] font-switzer text-white">
+              Social
+            </span>
+            <h3 class="font-switzer font-medium text-lg text-white">
+              Certified partner plantations
+            </h3>
+          </div>
+          <div class="flex flex-col gap-1 text-white pt-2">
+            <p class="font-jakarta text-[12px] text-white/70">*Active smallholder partners</p>
+            <p class="font-jakarta text-[16px] font-medium text-white">2,450 hectares</p>
+          </div>
+        </div>
+
+        <!-- ESG Card 4: Governance -->
+        <div class="p-6 rounded-lg bg-white/5 border border-white/18 flex flex-col gap-4">
+          <div class="flex flex-col gap-2 items-start">
+            <span class="bg-white/20 border border-white/30 px-3 py-1 rounded-full text-[12px] font-switzer text-white">
+              Governance
+            </span>
+            <h3 class="font-switzer font-medium text-lg text-white">
+              Core governance compliance rate
+            </h3>
+          </div>
+          <div class="flex flex-col gap-1 text-white pt-2">
+            <p class="font-jakarta text-[12px] text-white/70">Maintained for 3 consecutive years</p>
+            <p class="font-jakarta text-[16px] font-medium text-white">100%</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- News & Updates Section Wireframe (Figma Node: 11495:20061) -->
+  <section id="news" class="w-full bg-[#0a0a0a] text-white py-20 lg:py-24 px-6 lg:px-12 border-b border-white/10">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-10">
+
+      <!-- Header Row: Title & CTA -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <span class="font-switzer font-medium text-[12px] uppercase tracking-[1.44px] text-white/70">
+            Media &amp; Publications
+          </span>
+          <h2
+            class="font-switzer font-semibold text-3xl sm:text-4xl lg:text-[43.2px] leading-[1.15] tracking-[-0.43px] text-white">
+            Latest News &amp; Updates
+          </h2>
+        </div>
+
+        <a href="newsroom-wireframe.html" class="wireframe-btn-hero-pill">
+          <span>Discover Newsroom</span>
+          <div class="wireframe-btn-arrow-badge">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <hr class="border-t border-white/18" />
+
+      <!-- Content Grid: Left Featured News + Right News List -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+
+        <!-- Left Column: Featured News Card -->
+        <div class="lg:col-span-6 flex flex-col gap-4">
+          <div class="wireframe-placeholder-dark w-full aspect-[16/9] rounded-xl flex flex-col justify-end p-4">
+            <div
+              class="bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded text-[11px] font-switzer text-[#d9d9d9] tracking-[1.1px] uppercase self-start">
+              Featured news visual placeholder
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3">
+              <span
+                class="bg-white text-black px-2.5 py-1 rounded text-[10px] font-switzer font-medium uppercase tracking-wider">
+                CORPORATE NEWS
+              </span>
+              <span class="font-switzer text-[12px] text-white/70 uppercase tracking-wider">
+                July 19, 2026
+              </span>
+            </div>
+            <h3 class="font-switzer font-medium text-xl lg:text-2xl text-white">
+              STB Announces New Strategic Partnership in Renewable Energy
+            </h3>
+          </div>
+        </div>
+
+        <!-- Right Column: News List Items -->
+        <div class="lg:col-span-6 flex flex-col justify-between gap-6 border-l-0 lg:border-l border-white/18 lg:pl-10">
+
+          <!-- News Item 1 -->
+          <div class="flex flex-col gap-2 pb-5 border-b border-white/18">
+            <div class="flex items-center gap-3">
+              <span
+                class="bg-white/20 text-white px-2 py-0.5 rounded text-[10px] font-switzer font-medium uppercase tracking-wider">
+                EVENTS
+              </span>
+              <span class="font-switzer text-[11px] text-white/70 uppercase tracking-wider">
+                July 19, 2026
+              </span>
+            </div>
+            <h4 class="font-switzer font-medium text-base text-white hover:text-white/80 transition">
+              Samuel Tumbuh Bersama Strengthens Shareholding in the Plantation Sector
+            </h4>
+          </div>
+
+          <!-- News Item 2 -->
+          <div class="flex flex-col gap-2 pb-5 border-b border-white/18">
+            <div class="flex items-center gap-3">
+              <span
+                class="bg-white/20 text-white px-2 py-0.5 rounded text-[10px] font-switzer font-medium uppercase tracking-wider">
+                MEDIA COVERAGES
+              </span>
+              <span class="font-switzer text-[11px] text-white/70 uppercase tracking-wider">
+                July 19, 2026
+              </span>
+            </div>
+            <h4 class="font-switzer font-medium text-base text-white hover:text-white/80 transition">
+              Tech Giant Reports Record Quarterly Earnings, Shares Up 8%
+            </h4>
+          </div>
+
+          <!-- News Item 3 -->
+          <div class="flex flex-col gap-2 pb-5 border-b border-white/18">
+            <div class="flex items-center gap-3">
+              <span
+                class="bg-white/20 text-white px-2 py-0.5 rounded text-[10px] font-switzer font-medium uppercase tracking-wider">
+                PRESS RELEASES
+              </span>
+              <span class="font-switzer text-[11px] text-white/70 uppercase tracking-wider">
+                July 19, 2026
+              </span>
+            </div>
+            <h4 class="font-switzer font-medium text-base text-white hover:text-white/80 transition">
+              2025 Sustainability Report Officially Released
+            </h4>
+          </div>
+
+          <!-- News Item 4 -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+              <span
+                class="bg-white/20 text-white px-2 py-0.5 rounded text-[10px] font-switzer font-medium uppercase tracking-wider">
+                PRESS RELEASES
+              </span>
+              <span class="font-switzer text-[11px] text-white/70 uppercase tracking-wider">
+                July 19, 2026
+              </span>
+            </div>
+            <h4 class="font-switzer font-medium text-base text-white hover:text-white/80 transition">
+              Global Tech Stocks Surge Amid AI Breakthrough Announcements
+            </h4>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Informational Section: Investors & Careers Wireframe (Figma Node: 11495:20115) -->
+  <section id="informational" class="w-full py-20 lg:py-24 px-6 lg:px-12 bg-white">
+    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+
+      <!-- Left Card: Information for Investors -->
+      <div class="wireframe-card p-8 flex flex-col justify-between gap-6">
+        <div class="flex flex-col gap-3 items-start">
+          <span class="wireframe-eyebrow">Shareholders &amp; Investors</span>
+          <h2 class="font-switzer font-semibold text-2xl sm:text-3xl text-[#0a0a0a]">
+            Information for Investors
+          </h2>
+          <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+            View financial reports, disclosures, and AGM agendas for shareholders and investors.
+          </p>
+          <div class="pt-2">
+            <a href="reports-wireframe.html" class="wireframe-btn-pill-dark">
+              View Annual Report
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="wireframe-placeholder-light w-full h-[220px] sm:h-[260px] rounded-xl flex flex-col justify-end p-3 mt-4">
+          <div
+            class="bg-white/90 px-2.5 py-1 rounded text-[11px] font-switzer text-[#5e5e5e] tracking-[1.1px] uppercase self-start">
+            Investor portal visual placeholder
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card: Build Your Career With Us -->
+      <div class="wireframe-card p-8 flex flex-col justify-between gap-6">
+        <div class="flex flex-col gap-3 items-start">
+          <span class="wireframe-eyebrow">Talent &amp; Opportunities</span>
+          <h2 class="font-switzer font-semibold text-2xl sm:text-3xl text-[#0a0a0a]">
+            Build Your Career With Us
+          </h2>
+          <p class="font-jakarta text-[14px] text-[#5e5e5e] leading-relaxed">
+            Join a team building the future of Indonesia's key strategic industries.
+          </p>
+          <div class="pt-2">
+            <a href="careers-wireframe.html" class="wireframe-btn-pill-dark">
+              View Open Positions
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="wireframe-placeholder-light w-full h-[220px] sm:h-[260px] rounded-xl flex flex-col justify-end p-3 mt-4">
+          <div
+            class="bg-white/90 px-2.5 py-1 rounded text-[11px] font-switzer text-[#5e5e5e] tracking-[1.1px] uppercase self-start">
+            Careers visual placeholder
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Component Wireframe -->
+  <footer id="main-footer" class="w-full bg-[#0a0a0a] text-white">
+
+    <!-- Top Running Marquee Banner -->
+    <div class="footer-ticker">
+      <div class="footer-ticker-content">
+        Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp;
+        Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pioneering financial excellence
+        &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <!-- Main Footer Grid -->
+    <div
+      class="max-w-[1350px] mx-auto py-16 px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 font-switzer border-b border-white/18">
+
+      <!-- Col 1: Samuel Group Headquarters -->
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <h3 class="font-medium text-2xl text-white">Samuel Group</h3>
+        <div>
+          <h4 class="font-medium text-xl text-white pb-1">Headquarters</h4>
+          <p class="text-[15px] text-white/80">Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Col 2: About Us -->
+      <div class="lg:col-span-2 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">About Us</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="company-profile-wireframe.html" class="hover:text-white transition">Company Profile</a></li>
+          <li><a href="history-milestones-wireframe.html" class="hover:text-white transition">History &amp;
+              Milestones</a></li>
+          <li><a href="legal-documents-wireframe.html" class="hover:text-white transition">Legal Documents</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Explore -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Explore</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="#business-unit" class="hover:text-white transition">Business Units</a></li>
+          <li><a href="investor-highlights-wireframe.html" class="hover:text-white transition">Investor Relations</a>
+          </li>
+          <li><a href="newsroom-wireframe.html" class="hover:text-white transition">Newsroom</a></li>
+          <li><a href="careers-wireframe.html" class="hover:text-white transition">Careers</a></li>
+          <li><a href="sustainability-wireframe.html" class="hover:text-white transition">Sustainability</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Contact</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Client support</a></li>
+          <li><a href="ir-contact-wireframe.html" class="hover:text-white transition">Investor relations</a></li>
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Media &amp; PR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="max-w-[1350px] mx-auto py-8 px-6 lg:px-12 text-center font-switzer text-[15px] text-white/80">
+      © 2026 Samuel Group · All rights reserved · Disclosure Statement
+    </div>
+
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = !mobileDrawer.classList.contains('hidden');
+      if (isOpen) {
+        mobileDrawer.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      } else {
+        mobileDrawer.classList.remove('hidden');
+        mobileDrawer.classList.add('flex');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      }
+    });
+  </script>
+
+  <!-- Floating View Switcher Widget -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-1.5 font-sans">
+    <div class="px-3 py-1 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full text-[11px] text-neutral-300 shadow-lg pointer-events-none">
+      Design by Timedoor Indonesia
+    </div>
+    <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
+      <a href="index.html"
+      class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi
+      Design</a>
+    <a href="home-wireframe.html"
+      class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

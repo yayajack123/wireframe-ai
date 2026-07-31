@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Profile Wireframe — Samuel Group</title>
+
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Switzer', 'sans-serif'],
+            switzer: ['Switzer', 'sans-serif'],
+            jakarta: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="wireframe.css" />
+</head>
+<body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
+
+  <!-- Header / Navbar Component Wireframe -->
+  <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
+    <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
+      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
+        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        
+        <!-- About Us Dropdown -->
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">
+            <span>About Us</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="company-profile-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">Company Profile</a>
+            <a href="history-milestones-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">History &amp; Milestones</a>
+            <a href="legal-documents-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Legal Documents</a>
+          </div>
+        </div>
+
+        <!-- Investors Dropdown -->
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Investors</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-56 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investment Highlights</a>
+            <a href="market-disclosure-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Market &amp; Disclosure</a>
+            <a href="reports-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Reports Archive</a>
+            <a href="ir-contact-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investor Relations Contact</a>
+          </div>
+        </div>
+
+        <a href="governance-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Governance</a>
+
+        <!-- Newsroom Dropdown -->
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Newsroom</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="newsroom-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">News &amp; Press Releases</a>
+            <a href="insights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Podcast &amp; Insights</a>
+          </div>
+        </div>
+
+        <a href="careers-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Careers</a>
+      </div>
+
+      <div class="hidden lg:flex items-center shrink-0">
+        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section (PRD Section 5.1.1) -->
+  <section class="w-full bg-[#0a0a0a] text-white py-16 lg:py-24 px-6 lg:px-12 border-b border-white/10">
+    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Text Column -->
+      <div class="lg:col-span-7 flex flex-col items-start gap-6">
+        <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">About Us · Company Profile</span>
+        <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] leading-[1.1] text-white">
+          Pioneering Financial Excellence
+        </h1>
+        <p class="font-jakarta text-[16px] text-white/85 leading-relaxed max-w-[620px]">
+          Established in 1999, Samuel Group is an integrated financial institution offering institutional brokerage, wealth management, corporate advisory, and investment services across Indonesia.
+        </p>
+        
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#corporate-structure" class="wireframe-btn-hero-pill">
+            <span>Explore Structure</span>
+            <span class="wireframe-btn-arrow-badge">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+            </span>
+          </a>
+          <a href="#vision-mission" class="relume-btn-secondary border-white/20 text-white hover:bg-white/10">
+            View Core Values
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Placeholder Card -->
+      <div class="lg:col-span-5">
+        <div class="wireframe-placeholder-dark h-[320px] lg:h-[380px] w-full flex flex-col items-center justify-center gap-3 text-white/50 p-6 text-center">
+          <svg class="w-12 h-12 stroke-[1.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          <span class="font-switzer text-xs uppercase tracking-wider text-white/70">[ Media Placeholder: Corporate HQ Video / Hero Graphic ]</span>
+          <span class="font-jakarta text-[11px] text-white/40 max-w-[280px]">High-resolution footage of Samuel Tower headquarters and financial trading floor</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Vision, Mission & Core Values Section (PRD Section 5.1.1) -->
+  <section id="vision-mission" class="w-full py-20 px-6 lg:px-12 bg-white border-b border-black/10">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-12">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col gap-3 max-w-[640px]">
+        <span class="wireframe-eyebrow">Foundation &amp; Principles</span>
+        <h2 class="font-switzer font-semibold text-3xl sm:text-4xl text-[#0a0a0a]">Vision, Mission &amp; Core Values</h2>
+        <p class="font-jakarta text-[15px] text-[#5e5e5e]">
+          The strategic compass guiding our group's growth, governance, and commitment to market leadership.
+        </p>
+      </div>
+
+      <!-- 2-Column Grid: Vision/Mission (Left) vs Core Values (Right) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Vision & Mission Cards -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+          
+          <!-- Vision Card -->
+          <div class="relume-card bg-neutral-50/50 p-8 border border-black/12 flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-[#0a0a0a] text-white flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+              </div>
+              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Our Vision</h3>
+            </div>
+            <p class="font-jakarta text-[15px] text-[#0a0a0a]/85 leading-relaxed">
+              To be Indonesia's premier and most trusted integrated financial institution, driving sustainable capital market growth and delivering enduring value for clients, shareholders, and society.
+            </p>
+          </div>
+
+          <!-- Mission Card -->
+          <div class="relume-card bg-neutral-50/50 p-8 border border-black/12 flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-[#0a0a0a] text-white flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              </div>
+              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Our Mission</h3>
+            </div>
+            <ul class="space-y-3 font-jakarta text-[14px] text-[#0a0a0a]/85">
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0a0a0a] mt-2 shrink-0"></span>
+                <span>Deliver institutional-grade brokerage, advisory, and asset management services with strict regulatory oversight.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0a0a0a] mt-2 shrink-0"></span>
+                <span>Pioneer digital financial technology and data-driven equity research for intelligent investing.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#0a0a0a] mt-2 shrink-0"></span>
+                <span>Foster a culture of high ethical standards, talent development, and sustainable financial literacy across Indonesia.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Right Column: 4-Card Grid of Core Values -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+          <!-- Value Card 1: Integrity -->
+          <div class="relume-card p-6 flex flex-col gap-3 hover:border-black/30 transition">
+            <div class="w-10 h-10 rounded-lg bg-neutral-100 border border-black/10 flex items-center justify-center text-[#0a0a0a]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            </div>
+            <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a]">Integrity</h4>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Upholding uncompromising ethical standards, transparent reporting, and strict OJK compliance across all business units.
+            </p>
+          </div>
+
+          <!-- Value Card 2: Innovation -->
+          <div class="relume-card p-6 flex flex-col gap-3 hover:border-black/30 transition">
+            <div class="w-10 h-10 rounded-lg bg-neutral-100 border border-black/10 flex items-center justify-center text-[#0a0a0a]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 01-2 2h-1.072a2 2 0 01-2-2v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+            </div>
+            <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a]">Innovation</h4>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Developing modern trading technologies, digital mutual fund access, and quantitative analytical tools for our clients.
+            </p>
+          </div>
+
+          <!-- Value Card 3: Client-Centric -->
+          <div class="relume-card p-6 flex flex-col gap-3 hover:border-black/30 transition">
+            <div class="w-10 h-10 rounded-lg bg-neutral-100 border border-black/10 flex items-center justify-center text-[#0a0a0a]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            </div>
+            <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a]">Client-Centric</h4>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Tailoring financial solutions to individual retail investors, corporate entities, and institutional clients.
+            </p>
+          </div>
+
+          <!-- Value Card 4: Excellence -->
+          <div class="relume-card p-6 flex flex-col gap-3 hover:border-black/30 transition">
+            <div class="w-10 h-10 rounded-lg bg-neutral-100 border border-black/10 flex items-center justify-center text-[#0a0a0a]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+            </div>
+            <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a]">Excellence</h4>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Striving for research accuracy, fund performance consistency, and operational execution mastery.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Corporate Structure Section (PRD Section 5.1.1) -->
+  <section id="corporate-structure" class="w-full py-20 px-6 lg:px-12 bg-neutral-50/60 border-b border-black/10">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-10">
+      
+      <!-- Section Header & Controls -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-black/12 pb-6">
+        <div class="flex flex-col gap-2 max-w-[640px]">
+          <span class="wireframe-eyebrow">Governance &amp; Subsidiaries</span>
+          <h2 class="font-switzer font-semibold text-3xl sm:text-4xl text-[#0a0a0a]">Interactive Corporate Structure</h2>
+          <p class="font-jakarta text-[15px] text-[#5e5e5e]">
+            Explore Samuel Group's organizational hierarchy, holding oversight, and operating subsidiaries.
+          </p>
+        </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="flex items-center gap-2 p-1.5 bg-white border border-black/15 rounded-lg shadow-sm font-switzer text-xs">
+          <button id="tab-all" onclick="selectOrgTab('all')" class="px-4 py-2 rounded-md font-semibold bg-[#0a0a0a] text-white transition">Group Overview</button>
+          <button id="tab-sekuritas" onclick="selectOrgTab('sekuritas')" class="px-4 py-2 rounded-md font-medium text-[#5e5e5e] hover:text-[#0a0a0a] hover:bg-neutral-100 transition">Samuel Sekuritas</button>
+          <button id="tab-aset" onclick="selectOrgTab('aset')" class="px-4 py-2 rounded-md font-medium text-[#5e5e5e] hover:text-[#0a0a0a] hover:bg-neutral-100 transition">Samuel Aset Manajemen</button>
+        </div>
+      </div>
+
+      <!-- Organizational Chart Visualization Grid -->
+      <div class="w-full bg-white border border-black/12 rounded-xl p-8 shadow-sm flex flex-col items-center gap-8">
+        
+        <!-- Level 1: Board & Executive Committee -->
+        <div class="w-full max-w-[540px] text-center">
+          <div onclick="showOrgDetail('holding')" class="cursor-pointer relume-card bg-neutral-900 text-white p-5 hover:bg-black transition rounded-lg shadow-md flex flex-col items-center gap-1.5">
+            <span class="font-switzer text-[11px] uppercase tracking-widest text-white/60">Holding Board &amp; Executive Committee</span>
+            <h3 class="font-switzer font-semibold text-xl text-white">Samuel Group Holding</h3>
+            <span class="font-jakarta text-xs text-white/80">Board of Commissioners &amp; Board of Directors</span>
+          </div>
+        </div>
+
+        <!-- Connector Line -->
+        <div class="w-0.5 h-8 bg-black/20"></div>
+
+        <!-- Level 2: Subsidiary Divisions (2 Primary Pillars) -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1100px]">
+          
+          <!-- Subsidiary A: Samuel Sekuritas Indonesia -->
+          <div id="card-sekuritas" onclick="showOrgDetail('sekuritas')" class="cursor-pointer relume-card p-6 border-2 border-black/15 hover:border-black transition flex flex-col gap-4 bg-white">
+            <div class="flex items-center justify-between border-b border-black/10 pb-3">
+              <span class="font-switzer text-xs font-semibold uppercase tracking-wider text-[#0a0a0a]">Subsidiary 01</span>
+              <span class="px-2.5 py-1 rounded-full bg-neutral-100 font-switzer text-[11px] font-medium text-[#0a0a0a] border border-black/10">License: OJK Brokerage</span>
+            </div>
+            <div>
+              <h4 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Samuel Sekuritas Indonesia</h4>
+              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Equity &amp; Fixed Income Trading, Investment Banking, Equity Research</p>
+            </div>
+            
+            <!-- Divisions List -->
+            <div class="space-y-2 pt-2 border-t border-black/10">
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• Institutional Brokerage</span>
+                <span class="text-[#5e5e5e]">Equities &amp; Derivatives</span>
+              </div>
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• Retail Brokerage (STAR App)</span>
+                <span class="text-[#5e5e5e]">Online Trading Platform</span>
+              </div>
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• Investment Banking</span>
+                <span class="text-[#5e5e5e]">IPO &amp; Corporate Finance</span>
+              </div>
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• Equity Research House</span>
+                <span class="text-[#5e5e5e]">Macro &amp; Sectoral Reports</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subsidiary B: Samuel Aset Manajemen -->
+          <div id="card-aset" onclick="showOrgDetail('aset')" class="cursor-pointer relume-card p-6 border-2 border-black/15 hover:border-black transition flex flex-col gap-4 bg-white">
+            <div class="flex items-center justify-between border-b border-black/10 pb-3">
+              <span class="font-switzer text-xs font-semibold uppercase tracking-wider text-[#0a0a0a]">Subsidiary 02</span>
+              <span class="px-2.5 py-1 rounded-full bg-neutral-100 font-switzer text-[11px] font-medium text-[#0a0a0a] border border-black/10">License: OJK Fund Manager</span>
+            </div>
+            <div>
+              <h4 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Samuel Aset Manajemen</h4>
+              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Investment Solutions, Mutual Funds (Reksa Dana), Discretionary Funds</p>
+            </div>
+
+            <!-- Divisions List -->
+            <div class="space-y-2 pt-2 border-t border-black/10">
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• Mutual Funds Management</span>
+                <span class="text-[#5e5e5e]">Equity, Fixed Income, Money Market</span>
+              </div>
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• Discretionary Mandates (KPD)</span>
+                <span class="text-[#5e5e5e]">Institutional Portfolios</span>
+              </div>
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• ESG &amp; Sustainable Funds</span>
+                <span class="text-[#5e5e5e]">SAM ESG Index Fund</span>
+              </div>
+              <div class="flex items-center justify-between font-jakarta text-xs text-[#0a0a0a]">
+                <span>• Wealth Advisory</span>
+                <span class="text-[#5e5e5e]">High Net Worth Solutions</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Detail Inspection Box -->
+      <div id="org-detail-panel" class="relume-card p-6 bg-white border border-black/12 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <h4 id="detail-title" class="font-switzer font-semibold text-lg text-[#0a0a0a]">Samuel Group Holding Overview</h4>
+          <span class="font-switzer text-xs text-[#5e5e5e]">Click any subsidiary node above to inspect details</span>
+        </div>
+        <p id="detail-description" class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+          Samuel Group operates under unified corporate governance, overseeing strategic asset allocation, capital compliance, risk management, and regulatory disclosures across all Indonesian subsidiaries.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Awards & Accreditations Section (PRD Section 5.1.1) -->
+  <section class="w-full py-20 px-6 lg:px-12 bg-white">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-12">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col gap-3 max-w-[640px]">
+        <span class="wireframe-eyebrow">Recognition &amp; Credibility</span>
+        <h2 class="font-switzer font-semibold text-3xl sm:text-4xl text-[#0a0a0a]">Awards &amp; Industry Accreditations</h2>
+        <p class="font-jakarta text-[15px] text-[#5e5e5e]">
+          Recognized by regulators, exchanges, and global financial media for excellence in market execution and governance.
+        </p>
+      </div>
+
+      <!-- 4-Column Card Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Award 1 -->
+        <div class="relume-card p-6 flex flex-col justify-between gap-6 hover:border-black/30 transition">
+          <div class="flex flex-col gap-4">
+            <div class="wireframe-placeholder-light h-20 w-full flex items-center justify-center text-xs font-switzer text-[#5e5e5e]">
+              [ Badge: Best Broker 2025 ]
+            </div>
+            <div>
+              <span class="font-switzer text-[11px] font-semibold uppercase tracking-wider text-[#5e5e5e]">Bursa Efek Indonesia (IDX)</span>
+              <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a] pt-1">Best Equity Brokerage</h4>
+            </div>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Awarded for top institutional trading volume and execution speed on the Indonesia Stock Exchange.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-black/10 flex items-center justify-between text-xs font-switzer">
+            <span class="text-[#5e5e5e]">Category: Brokerage</span>
+            <span class="font-semibold text-[#0a0a0a]">Year 2025</span>
+          </div>
+        </div>
+
+        <!-- Award 2 -->
+        <div class="relume-card p-6 flex flex-col justify-between gap-6 hover:border-black/30 transition">
+          <div class="flex flex-col gap-4">
+            <div class="wireframe-placeholder-light h-20 w-full flex items-center justify-center text-xs font-switzer text-[#5e5e5e]">
+              [ Badge: Top Asset Manager ]
+            </div>
+            <div>
+              <span class="font-switzer text-[11px] font-semibold uppercase tracking-wider text-[#5e5e5e]">OJK &amp; Bloomberg</span>
+              <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a] pt-1">Top Asset Management Firm</h4>
+            </div>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Recognized for consistent AUM growth, mutual fund returns, and exemplary risk management.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-black/10 flex items-center justify-between text-xs font-switzer">
+            <span class="text-[#5e5e5e]">Category: Wealth</span>
+            <span class="font-semibold text-[#0a0a0a]">Year 2025</span>
+          </div>
+        </div>
+
+        <!-- Award 3 -->
+        <div class="relume-card p-6 flex flex-col justify-between gap-6 hover:border-black/30 transition">
+          <div class="flex flex-col gap-4">
+            <div class="wireframe-placeholder-light h-20 w-full flex items-center justify-center text-xs font-switzer text-[#5e5e5e]">
+              [ Badge: GCG Excellence ]
+            </div>
+            <div>
+              <span class="font-switzer text-[11px] font-semibold uppercase tracking-wider text-[#5e5e5e]">Asian Private Banker</span>
+              <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a] pt-1">Corporate Governance Leadership</h4>
+            </div>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Commended for transparent regulatory reporting, shareholder rights protection, and ethical standards.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-black/10 flex items-center justify-between text-xs font-switzer">
+            <span class="text-[#5e5e5e]">Category: Governance</span>
+            <span class="font-semibold text-[#0a0a0a]">Year 2024</span>
+          </div>
+        </div>
+
+        <!-- Award 4 -->
+        <div class="relume-card p-6 flex flex-col justify-between gap-6 hover:border-black/30 transition">
+          <div class="flex flex-col gap-4">
+            <div class="wireframe-placeholder-light h-20 w-full flex items-center justify-center text-xs font-switzer text-[#5e5e5e]">
+              [ Badge: Best Research ]
+            </div>
+            <div>
+              <span class="font-switzer text-[11px] font-semibold uppercase tracking-wider text-[#5e5e5e]">FinanceAsia</span>
+              <h4 class="font-switzer font-semibold text-lg text-[#0a0a0a] pt-1">Best Research House Indonesia</h4>
+            </div>
+            <p class="font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+              Honored for insightful macroeconomic forecast accuracy, sectoral research depth, and stock picks.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-black/10 flex items-center justify-between text-xs font-switzer">
+            <span class="text-[#5e5e5e]">Category: Equity Research</span>
+            <span class="font-semibold text-[#0a0a0a]">Year 2024</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Component Wireframe -->
+  <footer id="main-footer" class="w-full bg-[#0a0a0a] text-white">
+    
+    <!-- Top Running Marquee Banner -->
+    <div class="footer-ticker">
+      <div class="footer-ticker-content">
+        Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <!-- Main Footer Grid -->
+    <div class="max-w-[1350px] mx-auto py-16 px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 font-switzer border-b border-white/18">
+      
+      <!-- Col 1: Samuel Group Headquarters -->
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <h3 class="font-medium text-2xl text-white">Samuel Group</h3>
+        <div>
+          <h4 class="font-medium text-xl text-white pb-1">Headquarters</h4>
+          <p class="text-[15px] text-white/80">Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Col 2: About Us -->
+      <div class="lg:col-span-2 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">About Us</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="company-profile-wireframe.html" class="hover:text-white transition">Company Profile</a></li>
+          <li><a href="history-milestones-wireframe.html" class="hover:text-white transition">History &amp; Milestones</a></li>
+          <li><a href="legal-documents-wireframe.html" class="hover:text-white transition">Legal Documents</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Explore -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Explore</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="business-units-wireframe.html" class="hover:text-white transition">Business Units</a></li>
+          <li><a href="investor-highlights-wireframe.html" class="hover:text-white transition">Investor Relations</a></li>
+          <li><a href="newsroom-wireframe.html" class="hover:text-white transition">Newsroom</a></li>
+          <li><a href="careers-wireframe.html" class="hover:text-white transition">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Contact</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Client support</a></li>
+          <li><a href="ir-contact-wireframe.html" class="hover:text-white transition">Investor relations</a></li>
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Media &amp; PR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="max-w-[1350px] mx-auto py-8 px-6 lg:px-12 text-center font-switzer text-[15px] text-white/80">
+      © 2026 Samuel Group · All rights reserved · Disclosure Statement
+    </div>
+
+  </footer>
+
+  <!-- Floating Mode Switcher Widget -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-1.5 font-sans">
+    <div class="px-3 py-1 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full text-[11px] text-neutral-300 shadow-lg pointer-events-none">
+      Design by Timedoor Indonesia
+    </div>
+    <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
+      <a href="index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="company-profile-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+    </div>
+  </div>
+
+  <script>
+    function selectOrgTab(tab) {
+      const tabAll = document.getElementById('tab-all');
+      const tabSekuritas = document.getElementById('tab-sekuritas');
+      const tabAset = document.getElementById('tab-aset');
+
+      const cardSekuritas = document.getElementById('card-sekuritas');
+      const cardAset = document.getElementById('card-aset');
+
+      // Reset styles
+      [tabAll, tabSekuritas, tabAset].forEach(t => {
+        t.className = "px-4 py-2 rounded-md font-medium text-[#5e5e5e] hover:text-[#0a0a0a] hover:bg-neutral-100 transition";
+      });
+
+      if (tab === 'all') {
+        tabAll.className = "px-4 py-2 rounded-md font-semibold bg-[#0a0a0a] text-white transition";
+        cardSekuritas.style.opacity = "1";
+        cardAset.style.opacity = "1";
+        showOrgDetail('holding');
+      } else if (tab === 'sekuritas') {
+        tabSekuritas.className = "px-4 py-2 rounded-md font-semibold bg-[#0a0a0a] text-white transition";
+        cardSekuritas.style.opacity = "1";
+        cardAset.style.opacity = "0.35";
+        showOrgDetail('sekuritas');
+      } else if (tab === 'aset') {
+        tabAset.className = "px-4 py-2 rounded-md font-semibold bg-[#0a0a0a] text-white transition";
+        cardSekuritas.style.opacity = "0.35";
+        cardAset.style.opacity = "1";
+        showOrgDetail('aset');
+      }
+    }
+
+    function showOrgDetail(type) {
+      const title = document.getElementById('detail-title');
+      const desc = document.getElementById('detail-description');
+
+      if (type === 'holding') {
+        title.textContent = "Samuel Group Holding Overview";
+        desc.textContent = "Samuel Group operates under unified corporate governance, overseeing strategic asset allocation, capital compliance, risk management, and regulatory disclosures across all Indonesian subsidiaries.";
+      } else if (type === 'sekuritas') {
+        title.textContent = "PT Samuel Sekuritas Indonesia";
+        desc.textContent = "Licensed under OJK decree for Broker-Dealer and Underwriter operations. Specializes in institutional equity sales, retail trading via STAR app, fixed income trading, equity research, and corporate IPO underwriting.";
+      } else if (type === 'aset') {
+        title.textContent = "PT Samuel Aset Manajemen";
+        desc.textContent = "Licensed Fund Manager under OJK supervision. Manages open-ended mutual funds (Reksa Dana), institutional discretionary portfolios (KPD), ESG sustainable funds, and wealth management solutions.";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers Wireframe — Samuel Group</title>
+
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Switzer', 'sans-serif'],
+            switzer: ['Switzer', 'sans-serif'],
+            jakarta: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="wireframe.css" />
+</head>
+<body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
+
+  <!-- Header -->
+  <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
+    <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
+      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+
+      <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
+        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>About Us</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="company-profile-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Company Profile</a>
+            <a href="history-milestones-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">History &amp; Milestones</a>
+            <a href="legal-documents-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Legal Documents</a>
+          </div>
+        </div>
+
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Investors</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-56 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investment Highlights</a>
+            <a href="market-disclosure-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Market &amp; Disclosure</a>
+            <a href="reports-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Reports Archive</a>
+            <a href="ir-contact-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investor Relations Contact</a>
+          </div>
+        </div>
+
+        <a href="governance-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Governance</a>
+
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Newsroom</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="newsroom-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">News &amp; Press Releases</a>
+            <a href="insights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Podcast &amp; Insights</a>
+          </div>
+        </div>
+
+        <a href="careers-wireframe.html" class="px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">Careers</a>
+      </div>
+
+      <div class="hidden lg:flex items-center shrink-0">
+        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="w-full bg-[#0a0a0a] text-white py-16 lg:py-24 px-6 lg:px-12 border-b border-white/10">
+    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 flex flex-col items-start gap-4">
+        <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">Talent &amp; Culture</span>
+        <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Build Your Career With Us</h1>
+        <p class="font-jakarta text-[15px] text-white/85 max-w-[540px]">
+          Join Indonesia's leading capital markets group. Grow alongside experienced fund managers, investment bankers, and equity researchers.
+        </p>
+        <a href="#jobs" class="wireframe-btn-hero-pill mt-2">
+          <span>Explore Open Positions</span>
+          <div class="wireframe-btn-arrow-badge">↓</div>
+        </a>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="wireframe-placeholder-dark w-full aspect-[4/3] flex items-center justify-center p-6">
+          <span class="text-xs font-mono text-[#d9d9d9]">[ LIFE AT SAMUEL GROUP VIDEO / CULTURE PHOTO ]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Board Section -->
+  <section id="jobs" class="w-full py-20 px-6 lg:px-12 bg-white">
+    <div class="max-w-[1350px] mx-auto flex flex-col gap-10">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-4 bg-[#f6f6f6] border border-black/12 rounded-lg">
+        <div class="w-full md:w-96">
+          <input type="text" placeholder="Search position or key qualification..." class="w-full px-4 py-2.5 bg-white border border-black/12 rounded-md font-jakarta text-xs text-[#0a0a0a] outline-none" />
+        </div>
+        <div class="flex items-center gap-3 font-switzer text-xs">
+          <select class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md text-[#0a0a0a]">
+            <option>All Departments</option>
+            <option>Equity Research</option>
+            <option>Asset Management</option>
+            <option>Investment Banking</option>
+            <option>Technology &amp; IT</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Open Job Postings Accordions -->
+      <div class="flex flex-col gap-4">
+        
+        <!-- Job 1 -->
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <span class="wireframe-eyebrow">Equity Research · Full-Time</span>
+              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Senior Equity Research Analyst (Banking Sector)</h3>
+              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Location: Jakarta HQ &nbsp;·&nbsp; Experience: 5+ Years</p>
+            </div>
+            <button class="wireframe-btn-pill-dark text-xs shrink-0">Apply Now</button>
+          </div>
+          <div class="border-t border-black/12 pt-3 font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            <span class="font-semibold text-[#0a0a0a] block mb-1">Key Qualifications:</span>
+            Must hold WPEE license. Minimum 5 years analyzing Tier-1 Indonesian commercial banks. CFA designation preferred.
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <span class="wireframe-eyebrow">Asset Management · Full-Time</span>
+              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Portfolio Manager (Fixed Income)</h3>
+              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Location: Jakarta HQ &nbsp;·&nbsp; Experience: 4+ Years</p>
+            </div>
+            <button class="wireframe-btn-pill-dark text-xs shrink-0">Apply Now</button>
+          </div>
+          <div class="border-t border-black/12 pt-3 font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            <span class="font-semibold text-[#0a0a0a] block mb-1">Key Qualifications:</span>
+            Active WMI (Manajer Investasi) license mandatory. Proven track record managing discretionary bond portfolios.
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <span class="wireframe-eyebrow">Technology · Full-Time</span>
+              <h3 class="font-switzer font-semibold text-xl text-[#0a0a0a]">Senior Trading Systems Engineer</h3>
+              <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Location: Jakarta HQ &nbsp;·&nbsp; Experience: 3+ Years</p>
+            </div>
+            <button class="wireframe-btn-pill-dark text-xs shrink-0">Apply Now</button>
+          </div>
+          <div class="border-t border-black/12 pt-3 font-jakarta text-xs text-[#5e5e5e] leading-relaxed">
+            <span class="font-semibold text-[#0a0a0a] block mb-1">Key Qualifications:</span>
+            Experience with high-frequency trading APIs, FIX protocol, and real-time financial market data streaming pipelines.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Internship & Spontaneous Banner -->
+      <div class="p-8 bg-[#f6f6f6] border border-black/12 rounded-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="wireframe-eyebrow">Internship &amp; Talent Pool</span>
+          <h3 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Proactive Application / Internship Program</h3>
+          <p class="font-jakarta text-xs text-[#5e5e5e] pt-1">Don't see an exact match? Upload your CV into our talent pool for future openings.</p>
+        </div>
+        <button class="relume-btn-secondary text-xs shrink-0">Upload CV to Talent Pool &gt;</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Component Wireframe -->
+  <footer id="main-footer" class="w-full bg-[#0a0a0a] text-white">
+    
+    <!-- Top Running Marquee Banner -->
+    <div class="footer-ticker">
+      <div class="footer-ticker-content">
+        Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <!-- Main Footer Grid -->
+    <div class="max-w-[1350px] mx-auto py-16 px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 font-switzer border-b border-white/18">
+      
+      <!-- Col 1: Samuel Group Headquarters -->
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <h3 class="font-medium text-2xl text-white">Samuel Group</h3>
+        <div>
+          <h4 class="font-medium text-xl text-white pb-1">Headquarters</h4>
+          <p class="text-[15px] text-white/80">Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Col 2: About Us -->
+      <div class="lg:col-span-2 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">About Us</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="company-profile-wireframe.html" class="hover:text-white transition">Company Profile</a></li>
+          <li><a href="history-milestones-wireframe.html" class="hover:text-white transition">History &amp; Milestones</a></li>
+          <li><a href="legal-documents-wireframe.html" class="hover:text-white transition">Legal Documents</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Explore -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Explore</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="business-units-wireframe.html" class="hover:text-white transition">Business Units</a></li>
+          <li><a href="investor-highlights-wireframe.html" class="hover:text-white transition">Investor Relations</a></li>
+          <li><a href="newsroom-wireframe.html" class="hover:text-white transition">Newsroom</a></li>
+          <li><a href="careers-wireframe.html" class="hover:text-white transition">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Contact</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Client support</a></li>
+          <li><a href="ir-contact-wireframe.html" class="hover:text-white transition">Investor relations</a></li>
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Media &amp; PR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="max-w-[1350px] mx-auto py-8 px-6 lg:px-12 text-center font-switzer text-[15px] text-white/80">
+      © 2026 Samuel Group · All rights reserved · Disclosure Statement
+    </div>
+
+  </footer>
+
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-1.5 font-sans">
+    <div class="px-3 py-1 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full text-[11px] text-neutral-300 shadow-lg pointer-events-none">
+      Design by Timedoor Indonesia
+    </div>
+    <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
+      <a href="careers.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+    </div>
+  </div>
+</body>
+</html>

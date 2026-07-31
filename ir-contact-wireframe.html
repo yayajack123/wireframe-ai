@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investor Relations Contact Wireframe — Samuel Group</title>
+
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Switzer', 'sans-serif'],
+            switzer: ['Switzer', 'sans-serif'],
+            jakarta: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="wireframe.css" />
+</head>
+<body class="wireframe-mode min-h-screen bg-white text-[#0a0a0a] font-sans antialiased">
+
+  <!-- Header -->
+  <header id="main-header" class="navbar-relume sticky top-0 left-0 right-0 z-50">
+    <nav class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
+      <a href="home-wireframe.html" class="wireframe-logo-box">SAMUEL GROUP</a>
+
+      <div class="hidden lg:flex items-center gap-2 font-switzer font-medium text-[15px]">
+        <a href="home-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Home</a>
+        
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>About Us</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="company-profile-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Company Profile</a>
+            <a href="history-milestones-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">History &amp; Milestones</a>
+            <a href="legal-documents-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Legal Documents</a>
+          </div>
+        </div>
+
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] font-semibold border-b-2 border-[#0a0a0a]">
+            <span>Investors</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-56 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="investor-highlights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Investment Highlights</a>
+            <a href="market-disclosure-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Market &amp; Disclosure</a>
+            <a href="reports-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Reports Archive</a>
+            <a href="ir-contact-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded font-semibold">Investor Relations Contact</a>
+          </div>
+        </div>
+
+        <a href="governance-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Governance</a>
+
+        <div class="relative group py-1">
+          <button class="flex items-center gap-1.5 px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">
+            <span>Newsroom</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full left-0 w-52 p-2 mt-1 bg-white border border-black/12 rounded-lg hidden group-hover:block shadow-lg">
+            <a href="newsroom-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">News &amp; Press Releases</a>
+            <a href="insights-wireframe.html" class="block px-3 py-2 text-xs text-[#0a0a0a] hover:bg-neutral-100 rounded">Podcast &amp; Insights</a>
+          </div>
+        </div>
+
+        <a href="careers-wireframe.html" class="px-3 py-2 text-[#0a0a0a] hover:opacity-75 transition">Careers</a>
+      </div>
+
+      <div class="hidden lg:flex items-center shrink-0">
+        <a href="contact-wireframe.html" class="wireframe-btn-pill-dark">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="w-full bg-[#0a0a0a] text-white py-16 lg:py-24 px-6 lg:px-12 border-b border-white/10">
+    <div class="max-w-[1350px] mx-auto flex flex-col items-start gap-4">
+      <span class="font-switzer text-[12px] uppercase tracking-[1.44px] text-white/70">Investors Hub · Direct Inquiry</span>
+      <h1 class="font-switzer font-semibold text-4xl sm:text-5xl lg:text-[56px] text-white">Investor Relations Contact</h1>
+      <p class="font-jakarta text-[15px] text-white/85 max-w-[600px]">
+        Official channel for equity analysts, institutional investors, credit rating agencies, and shareholders.
+      </p>
+    </div>
+  </section>
+
+  <!-- IR Contact Section -->
+  <section class="w-full py-20 px-6 lg:px-12 bg-white">
+    <div class="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Left Column: Direct IR Team Contacts -->
+      <div class="lg:col-span-5 flex flex-col gap-6">
+        <span class="wireframe-eyebrow">Direct Outreach</span>
+        <h2 class="font-switzer font-semibold text-3xl text-[#0a0a0a]">Investor Relations Team</h2>
+        <p class="font-jakarta text-sm text-[#5e5e5e] leading-relaxed">
+          Our IR team is available during market trading hours to handle shareholder inquiries, analyst meetings, and earnings conference calls.
+        </p>
+
+        <div class="wireframe-card p-6 flex flex-col gap-4">
+          <div class="flex flex-col gap-1">
+            <span class="font-switzer text-xs text-[#9a9a9a] uppercase tracking-wider">IR Direct Email</span>
+            <a href="mailto:ir@samuel.co.id" class="font-switzer font-medium text-base text-[#0a0a0a] hover:underline">ir@samuel.co.id</a>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="font-switzer text-xs text-[#9a9a9a] uppercase tracking-wider">Hotline</span>
+            <span class="font-mono text-sm text-[#0a0a0a]">+62 21 2854 8150 (Ext. 402)</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="font-switzer text-xs text-[#9a9a9a] uppercase tracking-wider">Corporate Secretariat</span>
+            <p class="font-jakarta text-xs text-[#5e5e5e]">
+              Menara Imperium, 19th Floor, Jl. HR. Rasuna Said Kav. 1, Jakarta 12980, Indonesia
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 bg-[#f6f6f6] border border-black/12 rounded-lg flex flex-col gap-2">
+          <h4 class="font-switzer font-semibold text-sm text-[#0a0a0a]">Analyst Meeting Requests</h4>
+          <p class="font-jakarta text-xs text-[#5e5e5e]">
+            For 1-on-1 institutional investor meetings or site visits, please submit your request at least 5 business days in advance.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column: Targeted IR Inquiry Form -->
+      <div class="lg:col-span-7">
+        <div class="wireframe-card p-8 flex flex-col gap-6">
+          <h3 class="font-switzer font-semibold text-2xl text-[#0a0a0a]">Submit Investor Inquiry</h3>
+          
+          <form class="flex flex-col gap-4 font-jakarta text-xs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex flex-col gap-1.5">
+                <label class="font-switzer font-medium text-[#0a0a0a]">Full Name *</label>
+                <input type="text" placeholder="John Doe" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black" />
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <label class="font-switzer font-medium text-[#0a0a0a]">Institution / Company *</label>
+                <input type="text" placeholder="Global Capital Partners" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex flex-col gap-1.5">
+                <label class="font-switzer font-medium text-[#0a0a0a]">Work Email *</label>
+                <input type="email" placeholder="john@institution.com" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black" />
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <label class="font-switzer font-medium text-[#0a0a0a]">Phone Number</label>
+                <input type="tel" placeholder="+62 812 3456 7890" class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black" />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-switzer font-medium text-[#0a0a0a]">Inquiry Topic *</label>
+              <select class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none text-[#0a0a0a] font-jakarta">
+                <option>Select Topic...</option>
+                <option>Dividend Distribution</option>
+                <option>Financial Performance Clarification</option>
+                <option>AGMS / EGMS Agenda &amp; Proxy</option>
+                <option>Analyst Meeting Request</option>
+                <option>Others</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-switzer font-medium text-[#0a0a0a]">Message / Inquiry Details *</label>
+              <textarea rows="4" placeholder="Please detail your question or meeting request..." class="px-3.5 py-2.5 bg-white border border-black/12 rounded-md outline-none focus:border-black"></textarea>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-switzer font-medium text-[#0a0a0a]">Attachment (Optional PDF, max 10MB)</label>
+              <div class="wireframe-placeholder-light p-4 flex items-center justify-center cursor-pointer border-dashed">
+                <span class="text-xs font-mono text-[#9a9a9a]">[ UPLOAD ATTACHMENT BOX ]</span>
+              </div>
+            </div>
+
+            <button type="button" class="wireframe-btn-pill-dark w-full py-3 mt-2 text-sm">Submit IR Inquiry</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Component Wireframe -->
+  <footer id="main-footer" class="w-full bg-[#0a0a0a] text-white">
+    
+    <!-- Top Running Marquee Banner -->
+    <div class="footer-ticker">
+      <div class="footer-ticker-content">
+        Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pioneering financial excellence &nbsp;·&nbsp; Building trust &nbsp;·&nbsp; Creating value &nbsp;·&nbsp; Advancing Indonesia's financial future &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <!-- Main Footer Grid -->
+    <div class="max-w-[1350px] mx-auto py-16 px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 font-switzer border-b border-white/18">
+      
+      <!-- Col 1: Samuel Group Headquarters -->
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <h3 class="font-medium text-2xl text-white">Samuel Group</h3>
+        <div>
+          <h4 class="font-medium text-xl text-white pb-1">Headquarters</h4>
+          <p class="text-[15px] text-white/80">Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Col 2: About Us -->
+      <div class="lg:col-span-2 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">About Us</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="company-profile-wireframe.html" class="hover:text-white transition">Company Profile</a></li>
+          <li><a href="history-milestones-wireframe.html" class="hover:text-white transition">History &amp; Milestones</a></li>
+          <li><a href="legal-documents-wireframe.html" class="hover:text-white transition">Legal Documents</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Explore -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Explore</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="business-units-wireframe.html" class="hover:text-white transition">Business Units</a></li>
+          <li><a href="investor-highlights-wireframe.html" class="hover:text-white transition">Investor Relations</a></li>
+          <li><a href="newsroom-wireframe.html" class="hover:text-white transition">Newsroom</a></li>
+          <li><a href="careers-wireframe.html" class="hover:text-white transition">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
+        <h4 class="font-medium text-xl text-white">Contact</h4>
+        <ul class="space-y-2 text-[15px] text-white/80">
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Client support</a></li>
+          <li><a href="ir-contact-wireframe.html" class="hover:text-white transition">Investor relations</a></li>
+          <li><a href="contact-wireframe.html" class="hover:text-white transition">Media &amp; PR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="max-w-[1350px] mx-auto py-8 px-6 lg:px-12 text-center font-switzer text-[15px] text-white/80">
+      © 2026 Samuel Group · All rights reserved · Disclosure Statement
+    </div>
+
+  </footer>
+
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-1.5 font-sans">
+    <div class="px-3 py-1 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full text-[11px] text-neutral-300 shadow-lg pointer-events-none">
+      Design by Timedoor Indonesia
+    </div>
+    <div class="flex items-center gap-1.5 p-1.5 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 rounded-full shadow-2xl text-xs">
+      <a href="index.html" class="px-3 py-1.5 rounded-full text-neutral-300 hover:text-white hover:bg-white/10 transition">🎨 Hi-Fi Design</a>
+    <a href="home-wireframe.html" class="px-3 py-1.5 rounded-full bg-blue-600 text-white font-medium shadow-sm transition">📐 Wireframe</a>
+    </div>
+  </div>
+</body>
+</html>
